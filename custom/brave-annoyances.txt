@@ -1,0 +1,9 @@
+[Adblock Plus 2.0]
+search.brave.com###submit-llm-button
+search.brave.com##+js(set-cookie, summarizer, 0)
+search.brave.com##div[class*="download-cta"]
+search.brave.com##.tab-item:has(> a[href^="/ask"])
+search.brave.com###llm-snippet
+||search.brave.com/api/chatllm/with_ask$xhr,domain=search.brave.com
+search.brave.com##li.tab-item:has(> a[href^="/goggles?"])
+search.brave.com##li.tab-item:has(> a[href^="/news?"])
