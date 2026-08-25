@@ -1,1 +1,11 @@
-I'll put something here soon lol
+# Debloat the Web
+
+Auto-updating collection of filter lists to strip AI upsells, nags, and other browsing annoyances.
+
+## Subscribe
+
+Add this URL as a custom filter list in uBlock Origin:
+
+```
+https://raw.githubusercontent.com/ccrrbbnn/Debloat-the-Web/main/dist/combined.txt
+```
