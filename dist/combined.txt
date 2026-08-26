@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: Debloat the Web
-! Last updated: 2026-08-26 12:25:35 UTC
+! Last updated: 2026-08-26 19:30:18 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 search.brave.com###submit-llm-button
@@ -531,7 +531,8 @@ www.thebricks.com##.Modal_container__jm1jX
 ! ================
 ! -- https://www.britannica.com/
 ! "Ask the Chatbot" button below search bar
-www.britannica.com##.category-link-CHATBOT
+! * Use style to prevent navigation arrow from covering other options 
+www.britannica.com##.category-link-CHATBOT:style(visibility: hidden !important; height: 0 !important; width: 0 !important; padding: 0 !important; margin: 0 !important; font-size: 0 !important;)
 
 ! -- https://www.britannica.com/chatbot
 ||www.britannica.com/chat-api/$xhr,domain=www.britannica.com
