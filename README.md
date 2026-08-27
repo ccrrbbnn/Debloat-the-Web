@@ -9,3 +9,7 @@ Add this URL as a custom filter list in uBlock Origin:
 ```
 https://raw.githubusercontent.com/ccrrbbnn/Debloat-the-Web/main/dist/combined.txt
 ```
+or the shorter version
+```
+https://dtw.gev.au
+```
