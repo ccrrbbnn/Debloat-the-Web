@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: Debloat the Web
-! Last updated: 2026-08-28 01:51:10 UTC
+! Last updated: 2026-08-28 17:48:57 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 search.brave.com###submit-llm-button
@@ -5799,6 +5799,13 @@ www.adobe.com###adbmsgCta
 www.adobe.com##.adbmsgContentContainer:has(> .adbmsgContentIframe[src^="https://cdn.prod.assistant.adobe.com/production/static/"])
 ! Adobe Firefly card
 www.adobe.com##.appCard.FFC_FIREFLY_1\.0
+
+! =========
+! == ADP ==
+! =========
+! -- https://www.adp.com/
+! Chatbot (can be used to contact human)
+www.adp.com###embedded-messaging
 
 ! =============
 ! == Android ==
