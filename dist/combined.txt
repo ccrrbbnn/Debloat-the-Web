@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: Debloat the Web
-! Last updated: 2026-08-28 17:48:57 UTC
+! Last updated: 2026-08-29 01:15:05 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 search.brave.com###submit-llm-button
@@ -739,6 +739,13 @@ coinmarketcap.com##.BasePopover_with-arrow__66AQQ:has-text(AI trained on the mar
 coinmarketcap.com##.SetAlertItem_set-alert-item__fVuCD
 ! AI questions in news topics
 coinmarketcap.com##.homepageAiInsights_questionItem__6Igst
+
+! ===============
+! == Collabnix ==
+! ===============
+! -- https://collabnix.com/testcontainers-vs-docker-a-tale-of-two-containers/
+! Header banner for Docker AI book
+collabnix.com###docker-ai-book-banner
 
 ! ========================
 ! == Collins Dictionary ==
@@ -5036,6 +5043,14 @@ freeuseporn.com##.friends [href="https://www.nsfwlover.com/"]
 ! AI Jerk Off
 gamcore.com##li:has(> [href="/fuckyou/713"])
 
+! ======================
+! == hanime.tv (NSFW) ==
+! ======================
+! Ourdream AI ad
+hanime.tv###LandingEventAd
+! AI girlfriend ad in anime & image list
+hanime.tv##.restricted-free-only
+
 ! ===========================
 ! == HD Porn Comics (NSFW) ==
 ! ===========================
@@ -5886,6 +5901,13 @@ docs.cribl.io##.markdown-view-toggle__container
 ! =====================
 ! AI category in navbar
 blog.cloudflare.com##.nav-item[data-tag="ai"]
+
+! ============
+! == DBCode ==
+! ============
+! -- https://dbcode.io/docs/sql/external
+! Sidebar AI article category
+dbcode.io##.dr-areaitem[data-area="AI"]
 
 ! ============
 ! == Docker ==
