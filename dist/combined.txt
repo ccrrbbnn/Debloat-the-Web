@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: Debloat the Web
-! Last updated: 2026-08-29 15:52:25 UTC
+! Last updated: 2026-08-29 20:05:50 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 search.brave.com###submit-llm-button
@@ -197,6 +197,13 @@ www.americanbanker.com##.miso-hybrid-search-combo__grid-answer
 ||api-edge.askmiso.com/v1/ask/questions/$xhr,domain=www.americanbanker.com
 ! Remove sparkle from search icon
 www.americanbanker.com#%#//scriptlet('trusted-set-attr', 'use[href="#miso-arizent-icon-ai-search"]', 'href', '#icon-magnify')
+
+! =====================
+! == Answer Overflow ==
+! =====================
+! -- https://www.answeroverflow.com/m/1402722130789011496
+! Floating "Ask a question" prompt
+www.answeroverflow.com##form:has([placeholder="Ask a question..."])
 
 ! ========================
 ! == Archive of Our Own ==
