@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: Debloat the Web
-! Last updated: 2026-08-30 02:07:06 UTC
+! Last updated: 2026-08-30 10:50:35 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 search.brave.com###submit-llm-button
@@ -1988,8 +1988,24 @@ drive.google.com##.h-v:has([src="https://ssl.gstatic.com/docs/doclist/images/med
 drive.google.com##.De8rPe
 
 ! -- Viewing a file
-! "Ask Gemini" button in top right
+! "Ask Gemini" button in top right (no longer used?)
 drive.google.com###viewer-sidekick-button
+
+! -- With a PDF opened
+! Header - Gemini button 
+drive.google.com##.TLiyPe
+! Menubar - Tools
+! * TODO: Breaks keyboard navigation of menubar
+drive.google.com##[role="menuitem"]:has-text(Ask Gemini)
+drive.google.com##[role="menuitem"]:has-text(Ask Gemini) + [role="separator"]
+drive.google.com##[role="menuitem"]:has-text(Create an audio overview)
+! * Only hide if summaries are disbaled
+drive.google.com##[role="menu"] > [role="presentation"]:has-text(Suggestion controls):has-text(Enable PDF summary cards)
+drive.google.com##[role="menu"] > [role="presentation"]:has-text(Suggestion controls):has-text(Enable PDF summary cards) + [role="separator"]
+! Audio Overview
+drive.google.com##.DbMyfd.LOB30e:has([aria-label="Create an audio overview"])
+! Genini in sidebar
+drive.google.com##.equNN
 
 ! ====================
 ! == Google Flights ==
@@ -3030,6 +3046,10 @@ mixam.com##[data-controller="header--mixie"]
 ! -- https://mixam.com/
 ! "Get an Instant Quote" button
 mixam.com##[data-action="click->ai--mixie-banner#openHomepagePanel"]
+
+! -- Order page
+! Header sparkle button
+mixam.com##[data-type="mixie-header-controls"]
 
 ! =============
 ! == Mixscan ==
