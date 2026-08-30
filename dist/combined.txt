@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: Debloat the Web
-! Last updated: 2026-08-30 10:50:35 UTC
+! Last updated: 2026-08-30 15:38:01 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 search.brave.com###submit-llm-button
@@ -204,6 +204,8 @@ www.americanbanker.com#%#//scriptlet('trusted-set-attr', 'use[href="#miso-arizen
 ! -- https://www.answeroverflow.com/m/1402722130789011496
 ! Floating "Ask a question" prompt
 www.answeroverflow.com##form:has([placeholder="Ask a question..."])
+! Resources - MCP Server
+answeroverflow.com##.text-left.w-full.pt-4.border-t:has-text(MCP Server)
 
 ! ========================
 ! == Archive of Our Own ==
