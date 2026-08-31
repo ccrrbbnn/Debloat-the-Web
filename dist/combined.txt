@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: Debloat the Web
-! Last updated: 2026-08-30 20:12:07 UTC
+! Last updated: 2026-08-31 02:02:34 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 search.brave.com###submit-llm-button
