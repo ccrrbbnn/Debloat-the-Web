@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: Debloat the Web
-! Last updated: 2026-09-01 10:40:03 UTC
+! Last updated: 2026-09-01 15:40:52 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 search.brave.com###submit-llm-button
@@ -762,8 +762,15 @@ collabnix.com###docker-ai-book-banner
 ! -- https://www.collinsdictionary.com/
 ! "AI Assistant" button next to search bar
 www.collinsdictionary.com##.assistantIcon
+! Header assistant button (mobile)
+www.collinsdictionary.com##.assistantMobile:remove()
 ! "Ask Collins Dictionary" in bottom-right corner
 www.collinsdictionary.com###assistant-link
+
+! -- https://www.collinsdictionary.com/dictionary/english/word
+! Footer - Ask me a question
+||www.collinsdictionary.com/external/assistant/idm-assistant.js$script,domain=www.collinsdictionary.com
+www.collinsdictionary.com##.assistant-sticky-bar
 
 ! ====================
 ! == Computer World ==
@@ -2485,7 +2492,7 @@ www.johnhancock.com##.webchat
 ! Block API requests for AI code completion
 ||api.mistral.ai/v1/fim/completions$xhr,domain=jsfiddle.net
 ! Error message about code completion request failing
-jsfiddle.net###flash-messages > .error:has-text("Can't complete code. Error code: Failed to fetch.")
+jsfiddle.net###flash-messages > .error:has-text(Can't complete code. Error code: Failed to fetch.)
 ! AI Code completion button in sidebar
 jsfiddle.net##.si_ai
 
@@ -2703,11 +2710,13 @@ mailchimp.com##.genAIAssistChatbotModule
 ! == Manticore Search ==
 ! ======================
 ! -- https://manticoresearch.com/
-! Search tool
+! Search - Ask
+||api.indexfox.ai/api/6383989965980236728/ask$xhr,domain=widget.indexfox.ai
+widget.indexfox.ai##.no-results > p:has-text(You can hit Enter to ask AI a given question)
 widget.indexfox.ai##.ask-ai-button
 widget.indexfox.ai##.ask-response
-||api.indexfox.ai/api/6383989965980236728/ask$xhr,domain=widget.indexfox.ai
-widget.indexfox.ai##.no-results > .svelte-1d6gie5:has-text(" to ask AI a given question")
+! Search - Page summary
+||api.indexfox.ai/api/6383989965980236728/summary$xhr,domain=widget.indexfox.ai
 
 ! =================
 ! == Mathrubhumi ==
@@ -3681,7 +3690,7 @@ www.flyscoot.com##.vertical-divider:has(+ .currency-section)
 ! Left sidebar - Ask AI button
 www.scribd.com##[data-e2e="doc-actions-ask-ai-button-sticky_metadata_column"]
 ! Bottom bar (small page size) - Ask AI button
-www.scribd.com##[data-testid="mobile-actions-bottom-bar"] button:has-text("Ask AI")
+www.scribd.com##[data-testid="mobile-actions-bottom-bar"] button:has-text(Ask AI)
 
 ! =============
 ! == Semrush ==
@@ -4318,6 +4327,10 @@ www.virustotal.com##vt-crowdsourced-ai-gemini
 ! ===================
 ! == Visual Studio ==
 ! ===================
+! -- https://code.visualstudio.com/docs/editor/glob-patterns
+! Header banner promo for GPT discount
+code.visualstudio.com##.updates-banner:has([href^="https://docs.github.com/en/copilot/"])
+
 ! -- https://code.visualstudio.com/docs/setup/copilot#_remove-ai-features-from-vs-code
 ! Sidebar - Try This - Get started with AI
 code.visualstudio.com##.sidebar-try-this:has(> #sidebar-action-get-started-with-ai-0)
@@ -6271,6 +6284,17 @@ www.lowes.com##.ChatInviteButton
 ! -- https://developers.facebook.com/documentation/instagram-platform
 ! View as Markdown buttons
 developers.facebook.com##[class="x1xmf6yo"]
+
+! ======================
+! == Manticore Search ==
+! ======================
+! -- https://manticoresearch.com/
+! Floating "Search or ask AI..." button
+! * Search can also be done using search bar in top right
+manticoresearch.com###indexfox-bubble-container
+! Footer items
+manticoresearch.com##.footer-links [href="/ai-solutions/"]
+manticoresearch.com##.footer-links [href="/use-case/ai-database"]
 
 ! ===============
 ! == Microsoft ==
