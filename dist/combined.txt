@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: Debloat the Web
-! Last updated: 2026-08-31 22:07:58 UTC
+! Last updated: 2026-09-01 02:23:43 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 search.brave.com###submit-llm-button
@@ -1547,6 +1547,12 @@ github.com##.Link--secondary[href="/features/ai"]
 ! -- https://github.com/apps/desktop
 ! Header banner for GitHub Copilot app
 github.com##global-banner#desktop_copilot_app
+
+! -- https://cli.github.com/
+! Header banner for GitHub Copilot CLI
+cli.github.com##.announcement-banner[href="https://github.com/features/copilot/cli"]
+! Navbar link for Copilot CLI
+cli.github.com##nav [href="https://github.com/features/copilot/cli"]
 
 ! -- https://support.github.com/
 ! Header - Copilot button
@@ -6331,6 +6337,13 @@ mixam.com###front-chat-iframe
 ! ==============
 ! AI category in header
 www.pcguide.com##.menu-item-150141
+
+! ===================
+! == PriceCharting ==
+! ===================
+! -- https://www.pricecharting.com/photo-appraiser
+! Determine game value from photo
+pricecharting.com##.lot-appraiser-entry-form:has(> [value="photo"])
 
 ! ==================
 ! == Pureinfotech ==
