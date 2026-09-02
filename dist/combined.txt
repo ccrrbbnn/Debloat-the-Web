@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: Debloat the Web
-! Last updated: 2026-09-01 20:15:07 UTC
+! Last updated: 2026-09-02 00:24:56 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 search.brave.com###submit-llm-button
@@ -11,6 +11,7 @@ search.brave.com###llm-snippet
 ||search.brave.com/api/chatllm/with_ask$xhr,domain=search.brave.com
 search.brave.com##li.tab-item:has(> a[href^="/goggles?"])
 search.brave.com##li.tab-item:has(> a[href^="/news?"])
+||accounts.google.com/gsi/*$xhr,script,3p
 
 ! Title: Stevo's AI Blocklist
 ! Expires: 1 day (update frequency)
@@ -2493,7 +2494,7 @@ www.johnhancock.com##.webchat
 ! Block API requests for AI code completion
 ||api.mistral.ai/v1/fim/completions$xhr,domain=jsfiddle.net
 ! Error message about code completion request failing
-jsfiddle.net###flash-messages > .error:has-text(Can't complete code. Error code: Failed to fetch.)
+jsfiddle.net###flash-messages > .error:has-text("Can't complete code. Error code: Failed to fetch.")
 ! AI Code completion button in sidebar
 jsfiddle.net##.si_ai
 
