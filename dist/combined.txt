@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: Debloat the Web
-! Last updated: 2026-09-02 15:29:39 UTC
+! Last updated: 2026-09-02 20:13:17 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 search.brave.com###submit-llm-button
@@ -503,6 +503,13 @@ www.boldbi.com###boldchat-host
 ! -- https://cloud.boldbi.com/ (dashboard, logged in)
 ! "AI" tab in left sidebar.
 cloud.boldbi.com###bold-ai
+
+! =================
+! == Booking.com ==
+! =================
+! -- https://www.booking.com/searchresults.html?ss=London
+! Smart filter textbox
+www.booking.com##[data-testid="filters-search-widget"]
 
 ! ==================
 ! == Brave Search ==
@@ -5935,6 +5942,11 @@ www.astronomer.io##[data-title="Data engineering with AI"]
 www.astronomer.io##[data-title="GenAI"]
 ! Copy markdown button
 www.astronomer.io###page-context-menu
+
+! -- https://www.astronomer.io/ebooks/practical-guide-to-apache-airflow-3/
+! Header banner promo for "AI Orchestration cert at Orchestrate Everything" 
+! * href can vary based on URL parameters (https://www.astronomer.io/ebooks/practical-guide-to-apache-airflow-3/?utm_term=airflow)
+www.astronomer.io##.promo-banner:has(> [href*="/events/orchestrate-everything/"])
 
 ! ===============
 ! == Atlassian ==
