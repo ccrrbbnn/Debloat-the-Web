@@ -7,3 +7,4 @@ search.brave.com###llm-snippet
 ||search.brave.com/api/chatllm/with_ask$xhr,domain=search.brave.com
 search.brave.com##li.tab-item:has(> a[href^="/goggles?"])
 search.brave.com##li.tab-item:has(> a[href^="/news?"])
+||accounts.google.com/gsi/*$xhr,script,3p
