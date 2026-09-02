@@ -1,4 +1,1 @@
 m.facebook.com##.bottom.fixed-container.m
-m.facebook.com##div.bg-s2.m:nth-of-type(4):style(background: transparent !important;)
-m.facebook.com##div[role="tablist"] > div:nth-of-type(4):style(background: transparent !important;)
-m.facebook.com##div.bg-s2.m:nth-of-type(4):upward(1):style(background: transparent !important;)
