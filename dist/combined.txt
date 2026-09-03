@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title: Debloat the Web
-! Last updated: 2026-09-03 01:50:50 UTC
+! Last updated: 2026-09-03 03:37:07 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 search.brave.com###submit-llm-button
@@ -12,6 +12,36 @@ search.brave.com###llm-snippet
 search.brave.com##li.tab-item:has(> a[href^="/goggles?"])
 search.brave.com##li.tab-item:has(> a[href^="/news?"])
 ||accounts.google.com/gsi/*$xhr,script,3p
+
+! 3 Sept 2026 https://www.reddit.com
+www.reddit.com##.nd\:visible > faceplate-expandable-section-helper > .rounded-none.border-none.bg-transparent.m-0.p-0 > .font-normal > .mt-0.list-none.relative > .s\:rounded-2.bg-transparent.-outline-offset-1.py-2xs.cursor-pointer.hover\:no-underline.hover\:bg-neutral-background-hover.hover\:text-secondary-plain-hover.text-secondary-plain.gap-xs.px-md.relative.justify-between.flex
+www.reddit.com##.hover\:text-inherit.hover\:no-underline.decoration-none > games-section-badge-wrapper
+www.reddit.com##.select-none.min-h-screen-without-header.w-full.s\:shrink.shrink-0.pt-md.mb-0.mt-0.flex-col.flex.box-border.z-2 > faceplate-tracker
+www.reddit.com##hr.border-neutral-border-weak.my-sm.w-100:nth-of-type(2)
+www.reddit.com##advertise-button > .contents.nd\:visible > .contents.nd\:visible > .inline-flex.button.justify-center.items-center.icon.button-plain.px-\[calc\(var\(--rem12\)-var\(--button-border-width\,0px\)\)\].button-medium
+www.reddit.com##.inline-flex.button.justify-center.items-center.button-plain.px-\[calc\(var\(--rem12\)-var\(--button-border-width\,0px\)\)\].button-medium.active\:no-underline.hover\:no-underline.no-underline
+www.reddit.com##.items-center.flex > .nd\:invisible.nd\:w-\[54px\].nd\:h-xl.nd\:max-h-\[32px\]
+www.reddit.com##.nd\:w-\[54px\].nd\:invisible.nd\:h-xl.nd\:max-h-\[32px\].nd\:block
+www.reddit.com##shreddit-async-loader > .h-xl.flex
+www.reddit.com###main-content > .border-b-neutral-border-weak.border-solid.border-b-sm.border-0
+www.reddit.com##.nd\:visible > .mt-0.list-none.relative > .bg-transparent.s\:rounded-2.-outline-offset-1.py-2xs.cursor-pointer.hover\:no-underline.hover\:bg-neutral-background-hover.active\:bg-interactive-pressed.hover\:text-secondary-plain-hover.text-secondary-plain.gap-xs.px-md.relative.justify-between.flex
+www.reddit.com##faceplate-expandable-section-helper:nth-of-type(2) > .rounded-none.border-none.bg-transparent.m-0.p-0 > .font-normal > faceplate-tracker > .mt-0.list-none.relative > .s\:rounded-2.bg-transparent.-outline-offset-1.py-2xs.cursor-pointer.hover\:no-underline.hover\:bg-neutral-background-hover.hover\:text-secondary-plain-hover.text-secondary-plain.gap-xs.px-md.relative.justify-between.flex
+www.reddit.com##hr.border-neutral-border-weak.my-sm.w-100:nth-of-type(4)
+www.reddit.com###recent-communities-section > .rounded-none.border-none.bg-transparent.m-0.p-0 > .font-normal > .mt-0.list-none.relative > .s\:rounded-2.bg-transparent.-outline-offset-1.py-2xs.cursor-pointer.hover\:no-underline.hover\:bg-neutral-background-hover.hover\:text-secondary-plain-hover.text-secondary-plain.gap-xs.px-md.relative.justify-between.flex
+www.reddit.com###RECENT > li.mt-0.list-none.relative > .no-underline.bg-transparent.s\:rounded-2.-outline-offset-1.py-2xs.cursor-pointer.hover\:no-underline.hover\:bg-neutral-background-hover.active\:bg-interactive-pressed.hover\:text-secondary-plain-hover.text-secondary-plain.gap-xs.px-md.relative.justify-between.flex
+www.reddit.com##.border-neutral-border-weak.border-solid.border-b-sm.border-0.pb-sm.mb-sm
+www.reddit.com##ul.my-xs.list-none.m-0.p-0.w-100:nth-of-type(2) > faceplate-tracker.contents:nth-of-type(1) > .mt-0.list-none.relative > .no-underline.-outline-offset-1.py-xs.cursor-pointer.hover\:no-underline.hover\:bg-neutral-background-hover.active\:bg-interactive-pressed.hover\:text-secondary-plain-hover.text-secondary-plain.gap-xs.px-md.relative.justify-between.flex
+www.reddit.com##ul.my-xs.list-none.m-0.p-0.w-100:nth-of-type(2) > faceplate-tracker.contents:nth-of-type(2) > .mt-0.list-none.relative > .no-underline.-outline-offset-1.py-xs.cursor-pointer.hover\:no-underline.hover\:bg-neutral-background-hover.active\:bg-interactive-pressed.hover\:text-secondary-plain-hover.text-secondary-plain.gap-xs.px-md.relative.justify-between.flex
+www.reddit.com##hr.border-0.bg-neutral-border-weak.w-100.h-px:nth-of-type(1)
+www.reddit.com##.my-2xs.py-2xs.px-md.flex-col.flex.nd\:visible
+www.reddit.com##hr.border-b-neutral-border-weak.border-solid.border-b-sm.border-0:nth-of-type(3)
+www.reddit.com##faceplate-tracker.contents:nth-of-type(5) > .mt-0.list-none.relative > .no-underline.-outline-offset-1.py-xs.cursor-pointer.hover\:no-underline.hover\:bg-neutral-background-hover.active\:bg-interactive-pressed.hover\:text-secondary-plain-hover.text-secondary-plain.gap-xs.px-md.relative.justify-between.flex
+www.reddit.com##faceplate-tracker.contents:nth-of-type(4) > .mt-0.list-none.relative > .no-underline.-outline-offset-1.py-xs.cursor-pointer.hover\:no-underline.hover\:bg-neutral-background-hover.active\:bg-interactive-pressed.hover\:text-secondary-plain-hover.text-secondary-plain.gap-xs.px-md.relative.justify-between.flex
+
+! 3 Sept 2026 https://lumo.proton.me
+lumo.proton.me##.group-hover-opacity-container.relative.mb-4.justify-space-between.p-4.rounded-xl.border-weak.border.w-full.gap-2.items-center.flex-nowrap.flex-row.flex.composer-notification-card--info.composer-notification-card
+lumo.proton.me##.lumo-upgrade-trigger.lumo-plus-upgrade-button.upsell-addon-button.shrink-0.text-center.inline-block.button-solid-norm.button-medium.button
+
 
 ! Title: Stevo's AI Blocklist
 ! Expires: 1 day (update frequency)
