@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-09-03 10:59:18 UTC
+! Last updated: 2026-09-03 16:12:28 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -1202,6 +1202,7 @@ www.tiktok.com##+js(json-edit-fetch-response, $.itemList.[?.ad_info][?.author.un
 www.tiktok.com#%#//scriptlet('json-prune', 'itemList.[-].aigcLabelType itemList.[-].moderationAigcLabelType')
 www.tiktok.com##+js(json-prune-fetch-response, $.itemList.[?.ad_info][?.author.uniqueId=="lovart_ai"], propsToMatch, /api/recommend/item_list/))
 time.com###scale-agent-overlay-container
+tms-outsource.com##.menu-item:has(> [href="https://tms-outsource.com/blog/category/ai-coding/"])
 www.todoist.com##message-banner[data-banner-name="ramble-1vv4lt6"]
 app.todoist.com##button[aria-label="Dictate tasks with Ramble"]
 trip.com##.A9zea
@@ -1840,6 +1841,7 @@ sourceforge.net##.m-sidebar-widget:has(.main-image:is([alt="Build Agents and Mod
 squareup.com###q-messenger-frame[title="Qualified Messenger"]
 ||stackoverflow.com/ai-assist/$xhr,1p
 stackoverflow.blog##.my4:has(> a[href="/ai/"])
+stackify.com##.sidebar [href="https://stackify.com/tag/ai/"]
 docs.stripe.com##.⚙x1uodc[role="toolbar"]
 techcrunch.com##.wp-block-navigation-link:has(> [data-ctatext="AI"])
 www.techradar.com##.meganav-item--top-level:has(> [data-before-rewrite-localise="/tag/ai"])
