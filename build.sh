@@ -25,3 +25,5 @@ SOURCES="workspace/external/sources.txt"
   head -n 4 "$OUT"
   tail -n +5 "$OUT" | awk 'NF' | awk '!seen[$0]++'
 } > "${OUT}.tmp" && mv "${OUT}.tmp" "$OUT"
+
+cp "$OUT" index.html
