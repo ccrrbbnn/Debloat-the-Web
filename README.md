@@ -7,9 +7,5 @@ Auto-updating collection of filter lists to strip AI upsells, nags, and other br
 Add this URL as a custom filter list in uBlock Origin:
 
 ```
-https://raw.githubusercontent.com/ccrrbbnn/Debloat-the-Web/main/list.txt
-```
-or the shorter version
-```
-https://dtw.gev.au/list.txt
+https://dtw.gev.au
 ```
