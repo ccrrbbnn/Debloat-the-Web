@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-09-04 20:37:22 UTC
+! Last updated: 2026-09-05 03:56:01 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -1049,6 +1049,8 @@ www.qwant.com##._1xQVj.G-2qb.xsF9p.KC1qb:has(#llmMode)
 docs.rackspace.com##.Menu-Item[href^="https://chat.openai.com/?q="]
 docs.rackspace.com##.Menu-Item[href^="https://claude.ai/new?q="]
 docs.rackspace.com##.Menu-Item[href^="https://claude.ai/new?q="] + .Menu-Divider
+www.razer.com##[data-more-menu-uid="mm-razer-ai-node"]
+www.razer.com##li:has(> [href="https://www.razer.com/newsletter/ai"])
 www.rambler.ru##.rc__788yz.rc__U-mRx.r-vvrm5f4e
 realpython.com##.dropdown-item[href="/mentor/"]
 realpython.com##.card:has([href="/mentor/"]):style(visibility: hidden)
@@ -1739,6 +1741,7 @@ dbcode.io##.dr-areaitem[data-area="AI"]
 dev.to###default-sidebar-element-ai
 dev.to###default-sidebar-element-llm
 dev.to###default-sidebar-element-agents
+www.deviantart.com##section.Q6QePr:has-text(Create AI images and video)
 docs.docker.com##.navbar-group-font-title:has-text(AI and agents):upward(1)
 docs.docker.com##article > .lg\:block:has([marlin-action="copy-markdown-button"])
 www.dropbox.com##._mainContainer_yn2kq_11 > .dwg-hero-l3-plank__content-area > .dwg-box > .dwg-box > .dwg-stack > p
@@ -1883,6 +1886,7 @@ code.visualstudio.com##.docs-latest-item[href^="/docs/agents/"]
 code.visualstudio.com###main-nav [href="#agentic-articles"]
 code.visualstudio.com##.docs-markdown-actions
 tech.yahoo.com##.group\/mega-nav-item:has([aria-controls="submenu-ai"])
+www.youtube.com##yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"]:has(.ytChipShapeHost:has-text(/^AI$/))
 www.youtube.com##+js(trusted-replace-node-text, script, (function serverContract(), if("object"===typeof window.ytInitialPlayerResponse){window.ytInitialPlayerResponse=JSON.parse(JSON.stringify(window.ytInitialPlayerResponse));}(function serverContract(), sedCount, 1)
 www.youtube.com##.ytwHowThisWasMadeSectionViewModelBodyHeader:has-text("Made with AI"):upward(ytd-watch-flexy):style(--new-text-1:"Made with AI")
 www.youtube.com##.ytwHowThisWasMadeSectionViewModelBodyHeader:has-text("Made with AI"):upward(ytd-watch-flexy):style(--new-text-2:"Disclosed in video description")
