@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-09-06 15:16:55 UTC
+! Last updated: 2026-09-06 20:15:11 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -408,6 +408,8 @@ fandom.com##section.trfc161
 fightthenewdrug.org###askFTND_button
 firstpost.com###ia-search
 www.foodnetwork.com##.reviewsSummary
+www.forbes.com##.jwGQ_
+www.forbes.com##.genAiSummary
 ful.io##nav li:has(> [href="https://chrome.google.com/webstore/detail/email-finder-powered-by-a/lhcmmncnljldcdeeheclgfidlgllgfhc"])
 ful.io##nav > .items-center:has(> [href="https://chrome.google.com/webstore/detail/fulio-free-real-time-sale/adfkbphmnebbfljcdcfjlckobbacdgfn"])
 ful.io##.dropdown .border-t:has(+ li > [href^="https://chatgpt.com/"])
