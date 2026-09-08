@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-09-08 16:25:06 UTC
+! Last updated: 2026-09-08 20:58:53 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -1757,6 +1757,8 @@ dev.to###default-sidebar-element-ai
 dev.to###default-sidebar-element-llm
 dev.to###default-sidebar-element-agents
 www.deviantart.com##section.Q6QePr:has-text(Create AI images and video)
+docs.docker.com##footer [href="/llms.txt"]
+docs.docker.com##footer [href="/llms-full.txt"]
 docs.docker.com##.navbar-group-font-title:has-text(AI and agents):upward(1)
 docs.docker.com##article > .lg\:block:has([marlin-action="copy-markdown-button"])
 www.dropbox.com##._mainContainer_yn2kq_11 > .dwg-hero-l3-plank__content-area > .dwg-box > .dwg-box > .dwg-stack > p
@@ -1894,6 +1896,7 @@ www.udemy.com##.ud-unstyled-list:has(> li:only-child > #header-browse-nav-google
 www.udemy.com##.ud-heading-sm:has(+ .ud-unstyled-list > li:only-child > #header-browse-nav-google_certificates--2)
 www.udemy.com###header-browse-nav-learn_ai-3
 androidpolice.com,backyardboss.net,carbuzz.com,cbr.com,collider.com,dualshockers.com,fextralife.com,footballfancast.com,footballleagueworld.co.uk,gamerant.com,givemesport.com,hardcoregamer.com,hotcars.com,howtogeek.com,makeuseof.com,movieweb.com,pocket-lint.com,screenrant.com,simpleflying.com,thegamer.com,therichest.com,thesportster.com,thethings.com,thetravel.com,topspeed.com,xda-developers.com##.i-sensa
+code.visualstudio.com###nav-mcp
 code.visualstudio.com##.docs-get-started-card[href="/docs/agents/agents-tutorial"]
 code.visualstudio.com##[role="listitem"]:has(> .feature-card[href^="/docs/agents/"])
 code.visualstudio.com##[role="listitem"]:has(> .feature-card[href^="/docs/agent-customization/"])
