@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-09-09 16:21:10 UTC
+! Last updated: 2026-09-09 20:47:06 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -973,6 +973,7 @@ www.nike.com#%#//scriptlet('trusted-set-attr', '#nav-search-icon path', 'stroke'
 www.nike.com#%#//scriptlet('trusted-set-attr', '#nav-search-icon path', 'stroke-width', '1.5')
 www.nike.com#%#//scriptlet('trusted-set-attr', '#nav-search-icon path', 'fill', '')
 www.nordstrom.com##.j_24W
+northflank.com##aside:has(> [href="/blog/ai-sdlc"])
 www.nutraingredients.com##.ask-ia-widget
 www.nxcode.io##[role="dialog"][aria-label="Before you go..."]
 www.nxcode.io##.mb-8.flex:has(> [href^="https://studio.nxcode.io"])
@@ -1186,6 +1187,8 @@ www.supersummary.com##.MuiButtonBase-root[href$="#ai-tools-page-header"]
 www.supersummary.com##.edk5i7v1:has([data-testid="AutoFixHighOutlinedIcon"])
 www.supersummary.com##.e1jtsgu01:has(> [src="/ai-assistant-icon.svg"])
 talent.performyard.com##+js(json-prune-fetch-response, *, , propsToMatch, /v1/ai/)
+www.sysdig.com##.cc-nav-announcement:has([href="/blog/introducing-sysdig-secure-ai"])
+www.sysdig.com###pfCfChatContainer
 www.target.com##.sc-35985976-1
 www.target.com##[data-test="questionUserNickname"]:has-text(AI Shopping Assistant):upward([data-test="question"])
 www.target.com##div:has(> [data-test="review-summary-title"])
