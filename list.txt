@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-09-11 16:14:47 UTC
+! Last updated: 2026-09-11 20:47:50 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -702,7 +702,6 @@ www.google.com##.GS02Vb .H1EJdd [data-attrid="product_carousel_image"] .V3Siwf.t
 www.google.com##.GS02Vb .H1EJdd .Asw3Oe[jsname="GHLeGf"]:has(.gyP8Ib.b7GjXe.RiJqbb)
 www.google.com##.GS02Vb .mLFOe > .imucI
 www.google.com##.GS02Vb .mLFOe > .imucI + .ozDyDd.iRPzcb
-support.google.com##div.helpPanelContainerRoot
 support.google.com##.notification[data-name="Gemini_EN_RemoteWork_Covid19_NonEN"]
 workspace.google.com##.TemplateHeader_headerNavGroup:has(> [data-g-action="ai"])
 workspace.google.com##div._innerGrid_1u063_113 > div._card_1u063_136:has-text(Premium AI built-in)
