@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-09-14 12:24:15 UTC
+! Last updated: 2026-09-14 21:41:51 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -194,7 +194,7 @@ www.browserstack.com###promo-notification:has([href^="https://www.browserstack.c
 www.browserstack.com##.bstack-mm-li:has([data-title="AI Agents"])
 www.browserstack.com###menu-item-153460
 www.bunnings.com.au##[aria-label="Ask Bunnings AI"]
-||www.businessinsider.com/ajax/$xhr,domain=www.businessinsider.com
+||www.businessinsider.com/ajax/stream-ai-search$xhr,domain=www.businessinsider.com
 www.businessinsider.com##.catch-me-up-quickly
 www.businessinsider.com##.ai-summary-questions
 www.buzzfeed.com##.morefun_navigationFilters__L3eEr > ul > li:has([clip-path="url(#clip0_850_837)"])
@@ -996,6 +996,7 @@ www.nxcode.io###inline-article-cta
 www.nxcode.io##.fixed.right-8:has(> [aria-label="Start Free"])
 www.nxcode.io##.mt-16.pt-8.border-t.border-gray-200:has([aria-label="Start Free"])
 www.nxcode.io##.mt-16.pt-8.border-t.border-gray-200:has([placeholder="Describe your app idea..."])
+www.oloygeia.gr###real-article-summary-holder
 www.onboardmeetings.com###q-messenger-frame
 onecompiler.com##button:has(> .lucide-sparkles)
 op.gg##.button-bold.rounded.size-\[40px\]:has(> .transition-all > .bg-animated-radial.duration-300)
@@ -1798,6 +1799,7 @@ www.dropbox.com##._mainContainer_yn2kq_11 > .dwg-hero-l3-plank__content-area > .
 www.dropbox.com##._mainContainer_yn2kq_11 > .dwg-hero-l3-plank__media-area.dwg-flex-grid__cell.dwg-box
 www.dropbox.com###dwg_headline_plank-d494ba2353
 www.dropbox.com###dwg_multi_block_plank-e97fca73ef
+www.enikos.gr##[aria-labelledby="article-synopsis-heading"]
 www.evero.com##.giving:has([src="https://www.evero.com/wp-content/uploads/2025/10/AI-ASSIST.png"])
 www.foxbusiness.com##.dropdown-item--ai
 www.foxbusiness.com##.nav-item--ai
