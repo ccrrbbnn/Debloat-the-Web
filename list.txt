@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-09-15 16:42:19 UTC
+! Last updated: 2026-09-15 21:06:25 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -798,9 +798,6 @@ www.investopedia.com##.askmiso-ask-query-secondary
 www.ishopchangi.com###chat-wrapper
 www.jimdo.com###companion
 www.johnhancock.com##.webchat
-||api.mistral.ai/v1/fim/completions$xhr,domain=jsfiddle.net
-jsfiddle.net###flash-messages > .error:has-text("Can't complete code. Error code: Failed to fetch.")
-jsfiddle.net##.si_ai
 www.jumpingrivers.com###banner[data-name="aip-2027-eb"]
 kagi.com##[href="/assistant"]
 kagi.com##[href="/summarizer"]
@@ -1198,6 +1195,7 @@ askubuntu.com,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com#
 stackoverflow.com##.js-sofa-sidebar-promo
 stackoverflow.com##.js-gps-related-tags:has([href="/collectives/openai"])
 www.startpage.com##.products-section > [href^="https://vanish.startpage.com/"]
+static.app##.c-FluffyCard[href="/ai-answers"]
 webmail.strato.de##[aria-label="KI-Chat"]
 webmail.strato.de##[aria-label="KI-Integration"]
 webmail.strato.de##[data-app-name="io.ox/ai-chat"]
@@ -1841,6 +1839,7 @@ github.dev###chat\.statusBarEntry
 ||marketplace.visualstudio.com/_apis/public/gallery/vscode/github/copilot-chat/$xhr,domain=github.dev
 docs.github.com##.SearchOverlay_footer__45kw_
 docs.github.com##[class^="ProductSelectionCard_cell__"]:has([title="GitHub Copilot"])
+docs.github.com##[data-testid="carousel-items"] > [class^="Primer_Brand__Card-module__Card__outer___"]:has([href="/en/free-pro-team@latest/get-started/learning-to-code"])
 docs.github.com##[data-container="toc"] > .mb-3.ml-3:has([class*="ViewMarkdownButton_button__"])
 about.gitlab.com##.banner:has(> [href="https://about.gitlab.com/blog/gitlab-duo-agent-platform-delivers-400-percent-roi/"])
 about.gitlab.com##.stacking-cards__card:has([data-ga-name="gitlab-duo"])
