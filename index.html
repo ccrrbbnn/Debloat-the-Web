@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-09-14 21:41:51 UTC
+! Last updated: 2026-09-15 04:25:03 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -163,6 +163,11 @@ www.bing.com##.conversation_starters
 www.bing.com##.editorial-promo-card:has(> [aria-label^="Advance your AI skills"])
 www.bing.com###ShoppingLandingPage_ShoppingEducation:has-text(Try it on Copilot)
 rewards.bing.com##mee-card:has([aria-label="Microsoft Unlocked, Stories from the heart and soul of AI innovation, Explore now"])
+app.bitly.com##.nav-ai-assist
+app.bitly.com##.ai-create-module
+app.bitly.com##.swiper-slide:has([data-testid="chatgpt"]):has([data-testid="claude"]):has([data-testid="copilot"])
+app.bitly.com##button[aria-label="Analyze with AI"]
+app.bitly.com##.link-info--generate-backhalf
 bitwarden.com###landing-page > .w-full.border-deepBlue:has([href="/solutions/agentic-ai-security/"])
 bitwarden.com##button[aria-label="Open AI chat"]
 bitwarden.com##button[aria-label^="Ask AI"]
@@ -545,8 +550,9 @@ glyphy.io##li:has(> [href$="/name-generator"])
 glyphy.io##section[class^="NameGenerators_container__"]
 mail.google.com##.lRwCV
 mail.google.com##.Zmxtcf
-mail.google.com#%#//scriptlet('trusted-set-attr', '.gb_Oe.gb_Pe.bEP > svg', 'viewBox', '0 0 24 24')
-mail.google.com#%#//scriptlet('trusted-set-attr', '.gb_Oe.gb_Pe.bEP > svg > path', 'd', 'M20.49,19l-5.73-5.73C15.53,12.2,16,10.91,16,9.5C16,5.91,13.09,3,9.5,3S3,5.91,3,9.5C3,13.09,5.91,16,9.5,16 c1.41,0,2.7-0.47,3.77-1.24L19,20.49L20.49,19z M5,9.5C5,7.01,7.01,5,9.5,5S14,7.01,14,9.5S11.99,14,9.5,14S5,11.99,5,9.5z')
+mail.google.com#%#//scriptlet('trusted-set-attr', '.searchboxInputFontClass[placeholder="Ask Gmail"]', 'placeholder', 'Search mail')
+mail.google.com#%#//scriptlet('trusted-set-attr', 'button[aria-label="Search mail"] > svg[viewBox="0 -960 960 960"]', 'viewBox', '0 0 24 24')
+mail.google.com#%#//scriptlet('trusted-set-attr', 'button[aria-label="Search mail"] path', 'd', 'M20.49,19l-5.73-5.73C15.53,12.2,16,10.91,16,9.5C16,5.91,13.09,3,9.5,3S3,5.91,3,9.5C3,13.09,5.91,16,9.5,16 c1.41,0,2.7-0.47,3.77-1.24L19,20.49L20.49,19z M5,9.5C5,7.01,7.01,5,9.5,5S14,7.01,14,9.5S11.99,14,9.5,14S5,11.99,5,9.5z')
 mail.google.com##.bDl[command="sdt"]
 mail.google.com##.jKzJCd
 mail.google.com##.eLNZDd[command="sdt"]:remove()
@@ -761,6 +767,7 @@ www.instagram.com##.xmzvs34.xwib8y2.xf159sx.x1y1aw1k > div > .x1qrby5j.x7ja8zs.x
 www.instagram.com##div.xq9evs9 > div > span:has-text(Meta AI)
 www.instagram.com##div.html-div.xdj266r.xexx8yu.xyri2b.x18d9i69.x1c1uobl.x9f619.xjbqb8w.x78zum5.x15mokao.x1ga7v0g.x16uus16.xbiv7yw.xod5an3.x13fj5qh.x1xegmmw.x1n2onr6.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1:has(> a.x1fhwpqd.xz5fbns.x1hl2dhg.xb5lr1p.x6mezaz.x1roi4f4[href="https://www.meta.ai/?utm_source=foa_web_footer"])
 developerdocs.instructure.com##[data-testid="search-ask-question"]
+konfigurator.interdoor.pl##.fixed:has(> [aria-label="Otwórz czat AI"])
 ttlc.intuit.com###chip-wrapper
 www.investing.com##.quick-links_item__N8CIb:has(> [href="https://www.investing.com/warrenai"])
 www.investing.com##.quick-links_item__N8CIb:has(> [href="https://www.investing.com/pro/propicks"])
@@ -1615,6 +1622,11 @@ multporn.net###menu-22549-1
 mylust.com##li:has(> [href="https://mylust.com/albums/categories/ai/"])
 mylust.com##.item:has(> [data-id="307"])
 mymangacomics.com##.item.image-block:has(iframe)
+myhentaigallery.com##.main-menu li:has(> [href="https://myhentaicomics.com/mainmenu"])
+||myhentaicomics.com/maincandy$subdocument
+myhentaigallery.com##center:has(> div > ins[data-revive-zoneid])
+myhentaigallery.com##center:has(> div > iframe)
+myhentaigallery.com###Slider
 nhentai.xxx##.gallery_item[data-tags~="718"]
 www.nudevista.com##[itemprop="subjectOf"]:has([href="/?t=ai&s=t"])
 ohentai.org##.interlink[href="tagsearch.php?tag=AI Generated"]
@@ -1781,6 +1793,13 @@ docs.aws.amazon.com##.fLDVpm2fNtOFGVs9hPFgMA\=\=:has(> [alt="Kiro icon"])
 docs.aws.amazon.com##span:has(> [href="https://docs.aws.amazon.com/decision-guides/latest/decision-guides/genai-guide.html"])
 docs.aws.amazon.com##.GIwN\+fnsOgfy9-QBp9lnOg\=\=:has-text(AI resources)
 docs.aws.amazon.com##.t3G8h4IshJXWYCDYGqYhiA\=\=
+app.bitly.com##.integrations-discovery-page__filter-chips > .orb-pill-button:has-text(AI)
+app.bitly.com##.integration-card:has([alt="Bitly Model Context Protocol (MCP) logo"])
+app.bitly.com##.integration-card:has([alt="ChatGPT logo"])
+app.bitly.com##.integration-card:has([alt="Claude logo"])
+app.bitly.com##.integration-card:has([alt="Microsoft Copilot logo"])
+app.bitly.com##.integration-card:has([alt="Notion logo"])
+app.bitly.com##.integration-card:has([alt="Perplexity logo"])
 bitwarden.com##li.leading-1:has(> [href="/solutions/agentic-ai-security/"])
 docs.cribl.io##.markdown-view-toggle__container
 blog.cloudflare.com##.nav-item[data-tag="ai"]
@@ -1827,9 +1846,6 @@ gizmodo.com##[aria-label="Quick Links"] [href="https://gizmodo.com/tech/artifici
 gizmodo.com##[cmp-ltrk="fly-menu"][href="https://gizmodo.com/tech/artificial-intelligence"]
 gizmodo.com##.giz-bg-main [href="https://gizmodo.com/tech/artificial-intelligence"]
 ||appsgenaiserver-pa.clients6.google.com/v1/genai/$xhr,domain=mail.google.com
-mail.google.com#%#//scriptlet('trusted-set-attr', '.searchboxInputFontClass[placeholder="Ask Gmail"]', 'placeholder', 'Search mail')
-mail.google.com#%#//scriptlet('trusted-set-attr', 'button[aria-label="Search mail"] > svg[viewBox="0 -960 960 960"]', 'viewBox', '0 0 24 24')
-mail.google.com#%#//scriptlet('trusted-set-attr', 'button[aria-label="Search mail"] path', 'd', 'M20.49,19l-5.73-5.73C15.53,12.2,16,10.91,16,9.5C16,5.91,13.09,3,9.5,3S3,5.91,3,9.5C3,13.09,5.91,16,9.5,16 c1.41,0,2.7-0.47,3.77-1.24L19,20.49L20.49,19z M5,9.5C5,7.01,7.01,5,9.5,5S14,7.01,14,9.5S11.99,14,9.5,14S5,11.99,5,9.5z')
 about.google##.glue-jumplinks__link[href="#try-ai-tools"]
 about.google###ai-technology
 about.google###try-ai-tools
