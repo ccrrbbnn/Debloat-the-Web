@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-09-15 21:06:25 UTC
+! Last updated: 2026-09-16 04:20:38 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -213,7 +213,8 @@ www.buzzfeed.com##.morefun_navigationFilters__L3eEr > ul > li:has([clip-path="ur
 www.buzzfeed.com##.arcade_contentWrapper__3tHoG:has([clip-path="url(#clip0_850_837)"])
 dictionary.cambridge.org##.hdib:has(> [href$="/assistant"])
 dictionary.cambridge.org##.lb-cm.hlh21:has(> [href$="/assistant"])
-||dictionary.cambridge.org/api/assistant/$xhr,domain=dictionary.cambridge.org
+dictionary.cambridge.org##.ai-bar
+dictionary.cambridge.org##.ai-bar-button
 www.canva.com##[role="list"] > li:has(> [href="https://www.canva.com/canva-ai/"])
 www.canva.com##[role="list"] > li:has(> [href="https://promptedpodcast.com/"])
 www.canva.com##[role="list"] > li:has(> [href="https://www.canva.com/safe-ai-canva-shield/"])
@@ -645,6 +646,9 @@ docs.google.com##[jsname="Vjwl5e"]:has(#getting-started-dialog-navigation-view)
 ||appsgenaiserver-pa.clients6.google.com/v1/genai/$xhr,domain=drive.google.com
 drive.google.com###WWNEkf
 drive.google.com##.p5rLxe.HBDJjb
+drive.google.com#%#//scriptlet('trusted-set-attr', '.searchboxInputFontClass[placeholder="Get answers from Drive"]', 'placeholder', 'Search in Drive')
+drive.google.com#%#//scriptlet('trusted-set-attr', 'button[aria-label="Search Google Drive"] > svg[viewBox="0 -960 960 960"]', 'viewBox', '0 0 24 24')
+drive.google.com#%#//scriptlet('trusted-set-attr', 'button[aria-label="Search Google Drive"] path', 'd', 'M20.49,19l-5.73-5.73C15.53,12.2,16,10.91,16,9.5C16,5.91,13.09,3,9.5,3S3,5.91,3,9.5C3,13.09,5.91,16,9.5,16 c1.41,0,2.7-0.47,3.77-1.24L19,20.49L20.49,19z M5,9.5C5,7.01,7.01,5,9.5,5S14,7.01,14,9.5S11.99,14,9.5,14S5,11.99,5,9.5z')
 drive.google.com##[role="menuitem"]:has(img[src="https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_ai_studio_x16.png"]):remove()
 drive.google.com##.j6o35e:has([aria-label="You now have promotional access to audio overviews in Drive"])
 drive.google.com##.h-v[role="menuitem"]:has(.Nsw7Y)
@@ -1632,6 +1636,7 @@ myhentaigallery.com##.main-menu li:has(> [href="https://myhentaicomics.com/mainm
 myhentaigallery.com##center:has(> div > ins[data-revive-zoneid])
 myhentaigallery.com##center:has(> div > iframe)
 myhentaigallery.com###Slider
+nhentai.to###nb-band
 nhentai.xxx##.gallery_item[data-tags~="718"]
 www.nudevista.com##[itemprop="subjectOf"]:has([href="/?t=ai&s=t"])
 ohentai.org##.interlink[href="tagsearch.php?tag=AI Generated"]
@@ -1806,6 +1811,7 @@ app.bitly.com##.integration-card:has([alt="Microsoft Copilot logo"])
 app.bitly.com##.integration-card:has([alt="Notion logo"])
 app.bitly.com##.integration-card:has([alt="Perplexity logo"])
 bitwarden.com##li.leading-1:has(> [href="/solutions/agentic-ai-security/"])
+||dictionary.cambridge.org/api/assistant/$xhr,domain=dictionary.cambridge.org
 docs.cribl.io##.markdown-view-toggle__container
 blog.cloudflare.com##.nav-item[data-tag="ai"]
 code.org##.container > div[data-component-wrapper="true"]:has(+ .contentful-container [data-testid="content-card"] [href="/curriculum/artificial-intelligence-discoveries"]):has(+ .contentful-container [href="/curriculum/artificial-intelligence-discoveries"]):has(+ .contentful-container [href^="https://studio.code.org/s/k5-ai-data"])
