@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-09-17 16:41:20 UTC
+! Last updated: 2026-09-17 21:10:35 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -29,7 +29,7 @@ www.reddit.com##faceplate-tracker.contents:nth-of-type(4) > .mt-0.list-none.rela
 lumo.proton.me##.group-hover-opacity-container.relative.mb-4.justify-space-between.p-4.rounded-xl.border-weak.border.w-full.gap-2.items-center.flex-nowrap.flex-row.flex.composer-notification-card--info.composer-notification-card
 lumo.proton.me##.lumo-upgrade-trigger.lumo-plus-upgrade-button.upsell-addon-button.shrink-0.text-center.inline-block.button-solid-norm.button-medium.button
 ##.js--show.gen-ai
-||widget.kapa.ai/kapa-widget.bundle.js$script,domain=arrow.apache.org|developer.vonage.com|developers.reddit.com|docs.posit.co|kapa.ai|sentry.zendesk.com
+||widget.kapa.ai/kapa-widget.bundle.js$script,3p
 ||widget.molin.ai/shop-ai.js$script,domain=benu.hu|euronics.hu|www.decathlon.hu
 1password.com##.header-navigation__nav-banner-link[href="/product/unified-access"] > .box-decoration-clone
 www.1password.dev##[role="menuitem"]:has-text(Copy page as Markdown for LLMs)
@@ -200,7 +200,6 @@ www.thebricks.com###sidebar-cta
 www.thebricks.com##.Cta1_container__T8L_e, .Cta2_container__dcad2, .Cta3_container__pjUHX, .Cta4_container__Ut98Y, .Cta5_container__8bABo
 www.thebricks.com##.Modal_container__jm1jX
 www.britannica.com##.category-link-CHATBOT {visibility: hidden !important; height: 0 !important; width: 0 !important; padding: 0 !important; margin: 0 !important; font-size: 0 !important}
-||www.britannica.com/chat-api/$xhr,domain=www.britannica.com
 www.britannica.com##.header-topic-britannica-ai-module
 www.britannica.com##.toc-sticky-header-ai-container
 www.britannica.com##.ai-index-page-summary-module
@@ -458,10 +457,6 @@ gitbook.com##[data-testid="ai-chat-button"]
 gitbook.com##button[aria-label="GitBook Assistant"]
 gitbook.com##button[aria-label="GitBook Assistant"]:remove()
 ||api.individual.githubcopilot.com/$xhr,domain=github.com
-github.com##.CtaForm-secondaryAction[href="/github-copilot/pro"]
-github.com##[aria-labelledby="footer-title-platform"] li:has([href="/features/copilot"])
-github.com##[aria-labelledby="footer-title-platform"] li:has(> [href="/features/ai"])
-github.com##[aria-labelledby="footer-title-ecosystem"] li:has(> [href="/mcp"])
 github.com##[data-testid="top-bar-actions"] > .hide-md:has(> .CopilotItems-module__Wrapper__BFG9q)
 github.com##[data-component="ActionList.Group"]:has([data-testid="quick-search-suggestion"][href="/copilot"])
 github.com##[data-component="ActionList.Divider"]:has(+ [data-component="ActionList.Group"] [data-testid="quick-search-suggestion"][href="/copilot"])
@@ -506,13 +501,14 @@ github.com##[role="menuitem"]:has(.octicon-copilot):remove()
 github.com##[data-component="ActionList.Divider"]:last-child
 github.com##[data-component="ActionList.Divider"] + [data-component="ActionList.Divider"]
 github.com##[data-test-id="copilot-actions-chat-button"]
-github.com##li:has(> div[class^="NavGroup-module__group"] a[href="https://github.com/features/copilot"])
-github.com##li:has(> a[class^="NavLink-module__link"][href="https://github.com/resources/articles?topic=ai"])
+github.com##.CtaForm-secondaryAction[href="/github-copilot/pro"]
+github.com##li:has(> div[class^="NavGroup-module__group"]):has([href="https://github.com/features/copilot"]):has([href="https://github.com/features/ai/github-app"]):has([href="https://github.com/mcp"])
+github.com##li:has(> [href="https://github.com/resources/articles?topic=ai"][class^="Primer_Brand__Link-module__Link___"])
+github.com##li:has(> [href="https://github.com/features/copilot/copilot-business"][class^="Primer_Brand__Link-module__Link___"])
 github.com##.Primer_Brand__Button-module__Button___lDruK[href="/github-copilot/pro"]
-github.com##[data-testid="Grid-_R_12b_"]
-github.com###automation > .lp-SectionTemplate > .lp-SectionBlock > .lp-SectionBlock-content > :is(.lp-SectionIntro, .lp-SectionHero)
-github.com##.Link--secondary[href="/features/copilot"]
-github.com##.Link--secondary[href="/features/ai"]
+github.com##[aria-labelledby="footer-title-platform"] li:has([href="/features/copilot"])
+github.com##[aria-labelledby="footer-title-platform"] li:has(> [href="/features/ai"])
+github.com##[aria-labelledby="footer-title-ecosystem"] li:has(> [href="/mcp"])
 github.com##global-banner#desktop_copilot_app
 cli.github.com##.announcement-banner[href="https://github.com/features/copilot/cli"]
 cli.github.com##nav [href="https://github.com/features/copilot/cli"]
@@ -1087,6 +1083,9 @@ docs.rackspace.com##.Menu-Item[href^="https://chat.openai.com/?q="]
 docs.rackspace.com##.Menu-Item[href^="https://claude.ai/new?q="]
 docs.rackspace.com##.Menu-Item[href^="https://claude.ai/new?q="] + .Menu-Divider
 www.rambler.ru##.rc__788yz.rc__U-mRx.r-vvrm5f4e
+www.raspberrypi.com##.search-or
+www.raspberrypi.com##.ask-ai-trigger
+www.raspberrypi.com##.DocSearch-HitsFooter:has(> .DocSearch-AskAI)
 manual.raycast.com##[class^="button-module__"][href^="raycast://extensions/raycast/ai/ai-chat?"]
 www.razer.com##[data-more-menu-uid="mm-razer-ai-node"]
 www.razer.com##li:has(> [href="https://www.razer.com/newsletter/ai"])
@@ -1815,6 +1814,7 @@ app.bitly.com##.integration-card:has([alt="Microsoft Copilot logo"])
 app.bitly.com##.integration-card:has([alt="Notion logo"])
 app.bitly.com##.integration-card:has([alt="Perplexity logo"])
 bitwarden.com##li.leading-1:has(> [href="/solutions/agentic-ai-security/"])
+||www.britannica.com/chat-api/$xhr,domain=www.britannica.com
 ||dictionary.cambridge.org/api/assistant/$xhr,domain=dictionary.cambridge.org
 docs.cribl.io##.markdown-view-toggle__container
 blog.cloudflare.com##.nav-item[data-tag="ai"]
@@ -1847,6 +1847,7 @@ www.geeky-gadgets.com##.menu-item:has(> [href="https://www.geeky-gadgets.com/cat
 github.com##.prc-ActionList-ActionListItem-So4vC:has(> [href="/settings/copilot"])
 ||github.com/github-copilot/chat$xhr,1p
 ||github.com/static/images/modules/dashboard/promos/copilot-$image,1p
+github.com###automation > .lp-SectionTemplate > .lp-SectionBlock > .lp-SectionBlock-content > :is(.lp-SectionIntro, .lp-SectionHero)
 github.blog##li:has(> [href="https://github.blog/ai-and-ml/"])
 github.dev###chat\.statusBarEntry
 ||api.github.com/copilot_internal/$xhr,domain=github.dev
@@ -1934,6 +1935,7 @@ pydantic.dev##.library-card--pydantic-ai
 pydantic.dev##.library-card--logfire
 support.simplifi.quicken.com##[data-testid="notification-preview-container"]:has(> [aria-label*="message notification from Fin"])
 docs.rackspace.com##.rm-AIDropdown
+www.raspberrypi.com##.box[href="/documentation/computers/ai.html"]
 www.raycast.com##[class$="__navLink"][href="/core-features/ai"]
 www.raycast.com##[class$="__footerLink"][href="/store/category/ai"]
 realpython.com##.sidebar-module > [href="/tutorials/ai/"]
