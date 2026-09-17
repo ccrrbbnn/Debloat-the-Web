@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-09-16 21:08:14 UTC
+! Last updated: 2026-09-17 04:26:45 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -1317,6 +1317,9 @@ vimeo.com##.text-footer-sub-content[href="/features/ai-translation"]
 ||prod.agenticweb-marketing.com/gemini-ai/generate-summary$xhr,domain=www.virtusa.com
 www.virtusa.com##[class*="__aiCard"]
 www.virustotal.com##vt-crowdsourced-ai-gemini
+www.croeso.cymru##.o-important-notification-banner:has-text(Mae Gwydion, Asiant AI Newydd AI Croeso Cymru)
+www.visitwales.com##.o-important-notification-banner:has-text(Gwydion, Visit Wales’ new AI Agent)
+www.croeso.cymru,www.visitwales.com###gwydion-launcher
 code.visualstudio.com##.updates-banner:has([href^="https://docs.github.com/en/copilot/"])
 code.visualstudio.com##.sidebar-try-this:has(> #sidebar-action-get-started-with-ai-0)
 developer.vonage.com##.ai-icon-group
