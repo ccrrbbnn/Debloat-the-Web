@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-09-21 12:30:51 UTC
+! Last updated: 2026-09-21 21:52:32 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -59,7 +59,7 @@ www.amazon.*##.nav-li:has([data-csa-c-content-id$="_cs_health_ai"])
 www.amazon.*##.health-ai-header
 www.amazon.*##.ask-health-ai-section 
 www.amazon.*##.ahi-health-ai-content > .banner-pills-container
-www.amazon.*##+js(json-prune, suggestions.[-].widgetId)
+www.amazon.*##+js(json-prune-xhr-response, suggestions.[-].widgetId, , propsToMatch, /suggestions)
 www.amazon.com##+js(json-edit, $.suggestions[?@.text=="Ask Alexa a question"])
 www.amazon.com##+js(json-edit, $.suggestions[?@.text=="Compare products with Alexa"])
 www.amazon.*##+js(set-session-storage-item, rufus:panel:dockedState, null)
@@ -150,7 +150,7 @@ www.bing.com###m365copilot_overflow
 www.bing.com##.cdxCopilotIconBg
 www.bing.com###aitools
 www.bing.com###sa_ai_block
-www.bing.com##+js(json-edit, $.s[?@.t=="AI"])
+www.bing.com##+js(json-edit-xhr-response, $.s[?@.t=="AI"], propsToMatch, /AS/Suggestions)
 www.bing.com###b-scopeListItem-copilotsearch
 www.bing.com###b-scopeListItem-conv
 www.bing.com###b_copilot_search_container
@@ -190,11 +190,14 @@ www.boldbi.com##.elementor-element-6e4054b5
 www.boldbi.com###boldchat-host
 cloud.boldbi.com###bold-ai
 www.booking.com##[data-testid="filters-search-widget"]
-search.brave.com###submit-llm-button
 search.brave.com##+js(set-cookie, summarizer, 0)
+search.brave.com##.settings-content > .card > section:has([href="/help/ai"]):has(input[type="checkbox"]:not(:checked))
+search.brave.com###submit-llm-button
 search.brave.com##.tab-item:has(> a[href^="/ask"])
 search.brave.com###llm-snippet
 ||search.brave.com/api/chatllm/with_ask$xhr,domain=search.brave.com
+search.brave.com##.footer-button:has(> svg > [d^="M11.352 2.005a2.234 2.234 0 0 0-2.168"])
+search.brave.com##.footer-button:has(> svg > [d^="M11.352 2.005a2.234 2.234 0 0 0-2.168"]) + .spacing
 www.thebricks.com###announcement-banner
 www.thebricks.com###sidebar-cta
 www.thebricks.com##.Cta1_container__T8L_e, .Cta2_container__dcad2, .Cta3_container__pjUHX, .Cta4_container__Ut98Y, .Cta5_container__8bABo
@@ -658,7 +661,6 @@ drive.google.com##.iQnZTe.SMHH7
 drive.google.com##[data-test-id="help-me-organize-chip-container"]
 drive.google.com##.oaTPh
 drive.google.com##.h-v:has([src="https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_ai_studio_x32.png"])
-||drive.google.com/generate_204$image,domain=drive.google.com
 drive.google.com##.De8rPe
 drive.google.com###viewer-sidekick-button
 drive.google.com##.TLiyPe
@@ -1255,8 +1257,6 @@ thenewstack.io##.masthead-search-icon path[d^="M18 4a4 4 0 0 0-4 4 4 4 0"]
 www.thermofisher.com##.ask-ai-widget-container
 www.tiktok.com##+js(json-prune-fetch-response, itemList.[-].aigcLabelType itemList.[-].moderationAigcLabelType, , propsToMatch, /item_list)
 www.tiktok.com##+js(json-edit-fetch-response, $.itemList.[?.ad_info][?.author.uniqueId=="lovart_ai"], propsToMatch, /api/recommend/item_list/)
-www.tiktok.com#%#//scriptlet('json-prune', 'itemList.[-].aigcLabelType itemList.[-].moderationAigcLabelType')
-www.tiktok.com##+js(json-prune-fetch-response, $.itemList.[?.ad_info][?.author.uniqueId=="lovart_ai"], propsToMatch, /api/recommend/item_list/))
 time.com###scale-agent-overlay-container
 tms-outsource.com##.menu-item:has(> [href="https://tms-outsource.com/blog/category/ai-coding/"])
 www.todoist.com##message-banner[data-banner-name="ramble-1vv4lt6"]
@@ -1451,7 +1451,6 @@ www.youtube.com##.ytSearchboxComponentActions > .ytSearchboxComponentActionsButt
 www.youtube.com##.ytSearchboxComponentAiSuggestionsContainer
 www.youtube.com##yt-chip-cloud-chip-renderer.ytd-feed-filter-chip-bar-renderer:has(.ytChipShapeStartIconPadding)
 www.youtube.com###chip-shape-container:has-text(Your custom feed)
-* Experiment from https://www.youtube.com/new
 www.youtube.com##yt-chip-cloud-chip-renderer:has-text(Add Custom Feed)
 www.youtube.com##ytd-talk-to-recs-flow-renderer
 youtube.com##yt-video-description-youchat-section-view-model
@@ -1487,6 +1486,8 @@ studio.youtube.com##ytcp-menu-service-item-renderer:has-text(Brainstorm video id
 studio.youtube.com###comment-smart-replies
 studio.youtube.com##[test-id="VIDEO_BRAINSTORM_IDEA"]
 studio.youtube.com##.ask-studio-container
+www.zillow.com##.voyager-omnibutton
+www.zillow.com##[data-testid="voyager-omni-button"]
 www.zocdoc.com##.ai-search-hero__search-container-wrapper
 www.zocdoc.com##[data-test="ai-search-hero-quick-links"]
 www.zoom.com##[data-primary="ai"]
@@ -1911,6 +1912,7 @@ hevodata.com##.post-summary
 www.howtogeek.com##.subheader-menu-item:has(> [href="/category/ai-amp-machine-learning/"]):remove()
 www.humblebundle.com##.bundle:is([href*="/ai-"], [href*="-ai-"], [href*="claude-code"], [href*="genai-"]):not([href*="cybersecurity"])
 central.insightsoftware.com###forethought-chat
+www.instagram.com##+js(json-edit, $..[?@.node..ai_label_info.gen_ai_detection_method], , propsToMatch, /graphql/query)
 www.livescience.com##.meganav-item__link[data-before-rewrite-localise="/technology/artificial-intelligence"]
 www.lowes.com##.ChatInviteButton
 developers.facebook.com##[class="x1xmf6yo"]
@@ -1999,6 +2001,7 @@ www.youtube.com##.ytwHowThisWasMadeSectionViewModelBodyHeader:has-text("Made wit
 www.youtube.com###movie_player::before:style(content:var(--new-text-1); position:absolute; top:12px; right:12px; background:#ff0033; color:#fff; padding:6px 12px 15px; border-radius:6px; font-size:40px; font-weight:700; z-index:999; box-shadow:0 2px 10px rgba(0,0,0,0.6); border:2px solid #fff;)
 www.youtube.com###movie_player::after:style(content:var(--new-text-2); z-index:99999; position:absolute; top:68px; right:65px;)
 studio.youtube.com##ytcp-sam-chat
+studio.youtube.com###suggestion-button:has([aria-label="Chapters available"])
 www.zazzle.com##.CcaiLaunchButton_root
 support.zendesk.com###launcher
 zoom.us##+js(json-edit, $..result.recordingSmartChapters)
