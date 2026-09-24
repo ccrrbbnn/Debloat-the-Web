@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-09-24 16:55:05 UTC
+! Last updated: 2026-09-24 21:22:44 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -444,6 +444,7 @@ firstpost.com###ia-search
 www.foodnetwork.com##.reviewsSummary
 www.forbes.com##.jwGQ_
 www.forbes.com##.genAiSummary
+fritz.com###chat-widget-root
 ful.io##nav li:has(> [href="https://chrome.google.com/webstore/detail/email-finder-powered-by-a/lhcmmncnljldcdeeheclgfidlgllgfhc"])
 ful.io##nav > .items-center:has(> [href="https://chrome.google.com/webstore/detail/fulio-free-real-time-sale/adfkbphmnebbfljcdcfjlckobbacdgfn"])
 ful.io##.dropdown .border-t:has(+ li > [href^="https://chatgpt.com/"])
@@ -1477,14 +1478,13 @@ www.youdao.com##.nav_item:has(> [href^="https://lobsterai.youdao.com/"])
 www.youdao.com##.swiper-slide:has(> [src="https://ydlunacommon-cdn.nosdn.127.net/460a5a719e1f7b60a49fbb220136b56c.png"])
 www.youdao.com##.product-item:has([src="https://ydlunacommon-cdn.nosdn.127.net/cc4afa89cc5497e23b355bc7436cb1c9.png"])
 www.youtube.com##+js(set-constant, ytcfg.data_.EXPERIMENT_FLAGS.enable_ai_mode_searchbox_entrypoint, false)
-www.youtube.com##+js(set-constant, ytcfg.data_.EXPERIMENT_FLAGS.enable_ai_searchbox_ux, false)
-www.youtube.com##+js(set-constant, ytcfg.data_.EXPERIMENT_FLAGS.enable_ai_mode_suggest_client, false)
-www.youtube.com##+js(set-constant, ytcfg.data_.EXPERIMENT_FLAGS.enable_ai_searchbox_client_changes, false)
-www.youtube.com##+js(set-constant, ytcfg.data_.EXPERIMENT_FLAGS.enable_ai_search_web_m0_fixes, false)
-www.youtube.com##+js(set-constant, ytcfg.data_.EXPERIMENT_FLAGS.enable_ai_search_ui, false)
 www.youtube.com##.ytSearchboxComponentInputBox > [client-ve-type]
 www.youtube.com##.ytSearchboxComponentActions > .ytSearchboxComponentActionsButton[client-ve-type]
+www.youtube.com##+js(set-constant, ytcfg.data_.EXPERIMENT_FLAGS.enable_ai_searchbox_ux, false)
+www.youtube.com##+js(set-constant, ytcfg.data_.EXPERIMENT_FLAGS.enable_ai_mode_suggest_client, false)
 www.youtube.com##.ytSearchboxComponentAiSuggestionsContainer
+www.youtube.com##+js(set-constant, ytcfg.data_.EXPERIMENT_FLAGS.enable_ai_searchbox_client_changes, false)
+www.youtube.com##+js(set-constant, ytcfg.data_.EXPERIMENT_FLAGS.enable_ai_search_web_m0_fixes, false)
 www.youtube.com##yt-chip-cloud-chip-renderer.ytd-feed-filter-chip-bar-renderer:has(.ytChipShapeStartIconPadding)
 www.youtube.com###chip-shape-container:has-text(Your custom feed)
 www.youtube.com##yt-chip-cloud-chip-renderer:has-text(Add Custom Feed)
@@ -2039,6 +2039,8 @@ www.youtube.com##.ytwHowThisWasMadeSectionViewModelBodyHeader:has-text("Made wit
 www.youtube.com###movie_player::before:style(content:var(--new-text-1); position:absolute; top:12px; right:12px; background:#ff0033; color:#fff; padding:6px 12px 15px; border-radius:6px; font-size:40px; font-weight:700; z-index:999; box-shadow:0 2px 10px rgba(0,0,0,0.6); border:2px solid #fff;)
 www.youtube.com###movie_player::after:style(content:var(--new-text-2); z-index:99999; position:absolute; top:68px; right:65px;)
 www.youtube.com##+js(json-edit, $..playerOverlays..[?@.visibleOnLoad.key=="AUTO_CHAPTERS"])
+m.youtube.com##+js(json-edit, $..[?@.carouselTitleViewModel.teaserType=="WATCH_UI_TEASER_TYPE_CONVERSATIONAL_BOT"])
+m.youtube.com##+js(json-edit, $..[?@.carouselItemViewModel.teaserType=="WATCH_UI_TEASER_TYPE_CONVERSATIONAL_BOT"])
 studio.youtube.com##ytcp-sam-chat
 studio.youtube.com###suggestion-button:has([aria-label="Chapters available"])
 www.zazzle.com##.CcaiLaunchButton_root
