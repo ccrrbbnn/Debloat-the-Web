@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-09-24 11:28:55 UTC
+! Last updated: 2026-09-24 16:55:05 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -818,6 +818,16 @@ www.investopedia.com##.askmiso-ask-query
 www.investopedia.com##.askmiso-ask-query-secondary
 ||chat.ipon.hu/widget.js$script,1p
 www.ishopchangi.com###chat-wrapper
+www.jetbrains.com##[data-test-marker="Products"] [data-test$="menu-column-title"]:has-text("AI TOOLS"):upward(1)
+www.jetbrains.com##[data-test="main-submenu-banner"]:has(> [href="/air/"])
+www.jetbrains.com##[data-test="main-submenu-banner"]:has(> [href="/agentic-software-development/"])
+www.jetbrains.com##[data-test="main-submenu-item"]:has(> [href="/agentic-software-development/"])
+www.jetbrains.com##[data-test="main-submenu-item"]:has(> [href="/ai/"])
+www.jetbrains.com##.jb-footer-catalog h2:has-text(AI):upward(.jb-footer-catalog__item)
+www.jetbrains.com##.jb-footer-catalog-links__item:has(> [href="/pages/ai-agents/"])
+www.jetbrains.com##div[class^="_hero_"]:has([type="button"][href="/air/"])
+www.jetbrains.com##a[href="/business/"][class^="_card_"]
+www.jetbrains.com##section:has(> div > #ai)
 www.jimdo.com###companion
 www.johnhancock.com##.webchat
 www.jumpingrivers.com###banner[data-name="aip-2027-eb"]
@@ -1045,6 +1055,7 @@ outlook.office.com##[data-app-section="CopilotDabRibbon"]
 outlook.office.com##.___77lcry0.f10pi13n[aria-label="Copilot"]
 outlook.office.com##.fai-CopilotProvider
 academic.oup.com##.ai
+academic.oup.com##.oup-header-menu-item:has(.navbar-ai-assistant-link)
 academic.oup.com##.navbar-ai-assistant-container.navbar-menu
 www.oed.com###AIOverlay
 www.paychex.com###q-messenger-frame
@@ -1330,6 +1341,9 @@ androidpolice.com,backyardboss.net,carbuzz.com,cbr.com,collider.com,dualshockers
 androidpolice.com,backyardboss.net,carbuzz.com,cbr.com,collider.com,dualshockers.com,fextralife.com,footballfancast.com,footballleagueworld.co.uk,gamerant.com,givemesport.com,hardcoregamer.com,hotcars.com,howtogeek.com,makeuseof.com,movieweb.com,pocket-lint.com,screenrant.com,simpleflying.com,thegamer.com,therichest.com,thesportster.com,thethings.com,thetravel.com,topspeed.com,xda-developers.com##.action-bar-ai-feature
 app.vanta.com##[data-testid="global-vanta-ai-button"]
 app.vanta.com###vanta-agent
+||widget.wenetasystent.ai/page/$subdocument,domain=www.veldach.com.pl
+www.veldach.com.pl##.assistant-widget-container
+www.veldach.com.pl##.assistant-widget-drawer-content
 vercel.com##button[type="submit"][data-cdp-track*="\"header_ask_ai_clicked\""]
 vercel.com##[aria-label="Ask AI"]
 vercel.com##.mt-3 button:has-text(Ask AI)
@@ -1340,6 +1354,8 @@ vimeo.com##.text-footer-sub-content[href="/features/vimeo-ai"]
 vimeo.com##.text-footer-sub-content[href="/features/ai-translation"]
 ||prod.agenticweb-marketing.com/gemini-ai/generate-summary$xhr,domain=www.virtusa.com
 www.virtusa.com##[class*="__aiCard"]
+www.virustotal.com##fab-container
+www.virustotal.com###ai-virustotal-footer
 www.virustotal.com##vt-crowdsourced-ai-gemini
 www.croeso.cymru##.o-important-notification-banner:has-text(Mae Gwydion, Asiant AI Newydd AI Croeso Cymru)
 www.visitwales.com##.o-important-notification-banner:has-text(Gwydion, Visit Wales’ new AI Agent)
@@ -2022,6 +2038,7 @@ www.youtube.com##.ytwHowThisWasMadeSectionViewModelBodyHeader:has-text("Made wit
 www.youtube.com##.ytwHowThisWasMadeSectionViewModelBodyHeader:has-text("Made with AI"):upward(ytd-watch-flexy):style(--new-text-2:"Disclosed in video description")
 www.youtube.com###movie_player::before:style(content:var(--new-text-1); position:absolute; top:12px; right:12px; background:#ff0033; color:#fff; padding:6px 12px 15px; border-radius:6px; font-size:40px; font-weight:700; z-index:999; box-shadow:0 2px 10px rgba(0,0,0,0.6); border:2px solid #fff;)
 www.youtube.com###movie_player::after:style(content:var(--new-text-2); z-index:99999; position:absolute; top:68px; right:65px;)
+www.youtube.com##+js(json-edit, $..playerOverlays..[?@.visibleOnLoad.key=="AUTO_CHAPTERS"])
 studio.youtube.com##ytcp-sam-chat
 studio.youtube.com###suggestion-button:has([aria-label="Chapters available"])
 www.zazzle.com##.CcaiLaunchButton_root
