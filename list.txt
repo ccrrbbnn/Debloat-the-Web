@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-09-25 16:57:50 UTC
+! Last updated: 2026-09-25 21:22:39 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -1354,6 +1354,7 @@ vimeo.com##li[role="listitem"][aria-label="Vimeo AI"]
 vimeo.com##section.container-base[data-bp-cta-location-id="9c3e2300d913447a8224f3da9dfc39a7"]
 vimeo.com##.text-footer-sub-content[href="/features/vimeo-ai"]
 vimeo.com##.text-footer-sub-content[href="/features/ai-translation"]
+||app.aigochat.com/widget.js$script,domain=www.virtualmedia.pl
 ||prod.agenticweb-marketing.com/gemini-ai/generate-summary$xhr,domain=www.virtusa.com
 www.virtusa.com##[class*="__aiCard"]
 www.virustotal.com##fab-container
