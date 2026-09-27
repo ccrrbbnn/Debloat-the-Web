@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-09-26 20:54:18 UTC
+! Last updated: 2026-09-27 04:48:42 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -1350,6 +1350,8 @@ vercel.com##button[type="submit"][data-cdp-track*="\"header_ask_ai_clicked\""]
 vercel.com##[aria-label="Ask AI"]
 vercel.com##.mt-3 button:has-text(Ask AI)
 vercel.com##.mt-3 div:has(+ button:has-text(Ask AI))
+www.verizon.com###vz-gpt-flare-button
+||chatbot-exp.verizon.com/chatbot/nsa/nos/h8sv-vzwcb-onebot-proxy/eksprod/public/askverizon.js$script,domain=www.verizon.com
 vimeo.com##li[role="listitem"][aria-label="Vimeo AI"]
 vimeo.com##section.container-base[data-bp-cta-location-id="9c3e2300d913447a8224f3da9dfc39a7"]
 vimeo.com##.text-footer-sub-content[href="/features/vimeo-ai"]
@@ -1517,6 +1519,7 @@ www.youtube.com##+js(json-prune, $[?..paygatedQualitiesMetadata.*[?.key=="1080p"
 www.youtube.com##+js(json-prune, $[?..paygatedQualitiesMetadata.*[?.key=="720p"]]..adaptiveFormats.*[?.qualityLabel=="720p"])
 m.youtube.com##+js(json-edit, $..[?@.carouselTitleViewModel.teaserType=="WATCH_UI_TEASER_TYPE_CONVERSATIONAL_BOT"])
 m.youtube.com##+js(json-edit, $..[?@.carouselItemViewModel.teaserType=="WATCH_UI_TEASER_TYPE_CONVERSATIONAL_BOT"])
+www.youtube.com##+js(json-edit, $..playerOverlays..[?@.visibleOnLoad.key=="AUTO_CHAPTERS"])
 www.youtube.com##yt-live-chat-banner-manager:has(yt-live-chat-banner-chat-summary-renderer)
 www.youtube.com##ytd-expandable-metadata-renderer[has-video-summary]
 www.youtube.com##[chip-style="STYLE_AI_MODE_CHIP"]
@@ -2055,7 +2058,6 @@ www.youtube.com##.ytwHowThisWasMadeSectionViewModelBodyHeader:has-text("Made wit
 www.youtube.com##.ytwHowThisWasMadeSectionViewModelBodyHeader:has-text("Made with AI"):upward(ytd-watch-flexy):style(--new-text-2:"Disclosed in video description")
 www.youtube.com###movie_player::before:style(content:var(--new-text-1); position:absolute; top:12px; right:12px; background:#ff0033; color:#fff; padding:6px 12px 15px; border-radius:6px; font-size:40px; font-weight:700; z-index:999; box-shadow:0 2px 10px rgba(0,0,0,0.6); border:2px solid #fff;)
 www.youtube.com###movie_player::after:style(content:var(--new-text-2); z-index:99999; position:absolute; top:68px; right:65px;)
-www.youtube.com##+js(json-edit, $..playerOverlays..[?@.visibleOnLoad.key=="AUTO_CHAPTERS"])
 studio.youtube.com##ytcp-sam-chat
 studio.youtube.com###suggestion-button:has([aria-label="Chapters available"])
 www.zazzle.com##.CcaiLaunchButton_root
