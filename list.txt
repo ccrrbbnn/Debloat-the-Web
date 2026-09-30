@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-09-29 22:05:46 UTC
+! Last updated: 2026-09-30 05:03:55 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -845,6 +845,7 @@ kagi.com###shortcutAHelp:remove()
 kagi.com##.__sri_more_menu > .k_ui_dropdown_data_list > .list_items > hr
 kagi.com##.__sri_more_menu > .k_ui_dropdown_data_list > .list_items > ._0_summarize_page
 kagi.com##.__sri_more_menu > .k_ui_dropdown_data_list > .list_items > ._0_discuss_document
+kagi.com##.dropdown.filter-item .inner-label[data-name="ai"][href*="&ai="]:not([aria-current="true"])
 kahoot.com##.menu-item:has(> [href^="https://kahoot.com/kahoot-study/notes-to-flashcards/"])
 discover.kahoot.it##[data-functional-selector="native-carousel-item"]:has([class^="styles_AiAssisted__"])
 karmasearch.org###search-other-menu .flex-col:has([src="/_nuxt/img/ai.85b95e0.svg"])
@@ -1982,6 +1983,7 @@ www.howtogeek.com##.subheader-menu-item:has(> [href="/category/ai-amp-machine-le
 www.humblebundle.com##.bundle:is([href*="/ai-"], [href*="-ai-"], [href*="claude-code"], [href*="genai-"]):not([href*="cybersecurity"])
 central.insightsoftware.com###forethought-chat
 www.instagram.com##+js(json-edit, $..[?@.node..ai_label_info.gen_ai_detection_method], , propsToMatch, /graphql/query)
+kagi.com##.dropdown.filter-item:has(>.dd-list[data-name="ai"] .inner-label[aria-current="true"]:not([href*="&ai="]))
 www.livescience.com##.meganav-item__link[data-before-rewrite-localise="/technology/artificial-intelligence"]
 www.lowes.com##.ChatInviteButton
 developers.facebook.com##[class="x1xmf6yo"]
