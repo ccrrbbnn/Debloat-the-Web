@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-10-01 12:52:12 UTC
+! Last updated: 2026-10-01 22:32:25 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -876,6 +876,9 @@ www.lesnumeriques.com##[data-lemrock-component]
 www.lg.com##.MuiLink-root[href="https://www.lg.com/us/affectionate-intelligence-ai"]
 www.linkedin.com##.share-creation-state__writing-assistant-container--premium
 www.linkedin.com##div.pvs-entity__secondary-action-container:has(svg[data-test-icon="premium-signal-ai-small"])
+www.linkyhost.com##nav[class^="homepage-header_"] [href="/build"]
+www.linkyhost.com##footer [href="/build"]
+www.linkyhost.com##footer [href="/use-cases/host-ai-generated-website"]
 linuxmind.dev##.aipkit_chat_container
 linuxmind.dev##.aipkit_chat_container + .wp-block-spacer
 ||linuxmind.dev/wp-content/plugins/gpt3-ai-content-generator/dist/js/public-main.bundle.js$script,1p
@@ -1051,6 +1054,7 @@ www.nxcode.io##.mt-16.pt-8.border-t.border-gray-200:has([placeholder="Describe y
 www.oloygeia.gr###real-article-summary-holder
 www.onboardmeetings.com###q-messenger-frame
 onecompiler.com##button:has(> .lucide-sparkles)
+onecompiler.com##[data-slot="tooltip-trigger"]:has(> .lucide-wand-sparkles)
 op.gg##.button-bold.rounded.size-\[40px\]:has(> .transition-all > .bg-animated-radial.duration-300)
 op.gg##.flex-col.items-center.-mt-\[60px\] > .w-full.pb-2.md\:hidden.md\:pb-0
 openjsf.org##.mt-2.flex.items-center.gap-2.text-gray-500.dark\:text-gray-400:has([href^="https://claude.ai/"])
@@ -1205,14 +1209,15 @@ www.sephora.com##.css-1drm495[data-comp~="ProductPage"]
 www.sephora.com##[data-at="prs_summary_module"]
 shopthemint.com##.fb_iframe_widget
 shopthemint.com###ai-chat-plugin-banner-container
-www.shopify.com##div.\[grid-area\:aside\] > ul > li:has(> a[href="/sidekick"])
-www.shopify.com##ul.\[grid-area\:items\] > li > ul.level3-container > li > a:is([href="/magic"], [href="/chatgpt"])
-www.shopify.com##div.container:has(> div.flex > div.shadow-card > div > div > p.richtext > a[data-component-name="cta-magic"][href="/magic"])
-admin.shopify.com##._ButtonWrapper_1zyxe_4
-admin.shopify.com##.Polaris-Box > .Polaris-InlineStack > ._Avatar_iv0hk_7
-admin.shopify.com##._Sidebar_xdtqe_5
-online-store-web.shopifyapps.com##.Polaris-Layout__Section:has(._generationsContainer_8uqbi_1)
-www.shopify.com##.hero-second-panel:has(a[data-component-name="ai-store-builder"])
+||sidekick.shopify.com/api/store/*/conversations/$xhr,domain=admin.shopify.com
+||sidekick.shopify.com/api/store/*/messages$xhr,domain=admin.shopify.com
+admin.shopify.com##button[aria-controls="sidekick"]
+admin.shopify.com##[class^="_SubSection_"][data-variant="platform"]:has-text(Sidekick conversations)
+admin.shopify.com##div[class^="_SidekickField_"][data-sidekick-field]
+admin.shopify.com##[class^="_ControlsContainer_"] > [class*="_SectionBreak_"]:has(#sidekick-field-activator)
+[class^="_Section_"]
+admin.shopify.com##[data-component-name="store-name-suggestion-footer"]
+shopify.dev##li[class*="_ActionAskAssistant_"]:has(> #open-assistant)
 www.shutterfly.com###paige-ai-chatbot-button-desktop
 www.shutterfly.com###paige-ai-chatbot-button-mobile
 www.singaporeair.com##.dwc-pl--SiaHeader__ChatButton
@@ -1224,6 +1229,15 @@ sleepopolis.com###art-chat-launcher
 sleepopolis.com###art-chat-widget
 slickdeals.net##.commentsSummaryModuleV2 > .commentsSummaryModuleV2__header
 slickdeals.net##.commentsSummaryModuleV2 > .commentsSummaryModuleV2__card:has(> .commentsSummaryModuleV2__summary)
+smallseotools.com##.nav-link[href="https://smallseotools.com/paraphrasing-tool/"]
+smallseotools.com##.popular_tools > .col:has(> [href="https://smallseotools.com/paraphrasing-tool/"])
+smallseotools.com##.popular_tools > .col:has(> [href="https://smallseotools.com/ai-humanizer/"])
+smallseotools.com##.popular_tools > .col:has(> [href="https://smallseotools.com/article-rewriter/"])
+smallseotools.com##.footer_links[href="https://smallseotools.com/paraphrasing-tool/"]
+smallseotools.com##.icon_sty[href="https://smallseotools.com/paraphrasing-tool/"]
+smallseotools.com##.icon_sty[href="https://smallseotools.com/text-summarizer/"]
+smallseotools.com##.icon_sty[href="https://smallseotools.com/ai-writer/"]
+smallseotools.com##.icon_sty[href="https://smallseotools.com/ai-humanizer/"]
 softonic.com##.js-menu-featured-item[data-track-section-id="ai"]
 softonic.com##li:has(> [data-track-category-id="ai"])
 softonic.com##li:has(> [data-meta="card-category"] > [href="https://en.softonic.com/ai/windows"])
@@ -2057,6 +2071,19 @@ developer.salesforce.com##doc-content-action-toolbar
 www.sciencedirect.com###bannerCarouselContent > .carousel-slides:has(:last-child:nth-child(2)) > #tabpanel-0:has(> .leapSpace-banner)
 www.sciencedirect.com###bannerCarouselContent > .carousel-slides:has(:last-child:nth-child(2)) > #tabpanel-0:has(> .leapSpace-banner) + #tabpanel-1 {display: block !important}
 www.sciencedirect.com###bannerCarouselContent .carousel-indicators:has(:last-child:nth-child(2)) > li:nth-child(1):has(>[aria-label="LeapSpace slide"])
+www.shopify.com#$#[data-component-name="global-nav-level2"] [href="/sidekick"] {visibility: hidden}
+www.shopify.com#?##ab-section-tab-2:has-text(Across AI and on social.)
+www.shopify.com##[data-component-name="home-agentic-section"]
+www.shopify.com##[data-component-name="home-sidekick-section"]
+www.shopify.com##[data-component-name="home-dev-section"]
+www.shopify.com##.level3-container [href="/sidekick"]
+www.shopify.com##.level3-container [href="/agentic-storefronts"]
+www.shopify.com##.\[grid-area\:belt\] > li:has(> [href="/ucp"])
+www.shopify.com##.hero-second-panel:has(a[data-component-name="ai-store-builder"])
+www.shopify.com#?#[data-section-name="website-builder-faq-section"] [data-component-name="accordion"]:has-text(Does Shopify offer AI tools or features to assist with website creation and design?)
+admin.shopify.com##[role="button"]:has([href*="/apps/agentic?appLoadId="])
+shopify.dev##nav li:has(> [href="/docs/agents"])
+shopify.dev##[data-section-name="content-card"][class^="_HomeCard_"]:has([href="/docs/agents"])
 www.semrush.com##[data-test="toc-widget-custom"]
 support.smartbear.com###embedded-messaging
 sourceforge.net##.m-sidebar-widget:has(.main-image:is([alt="Build Agents and Models on One Platform Icon"], [alt="Ship Agents Faster Icon"]))
