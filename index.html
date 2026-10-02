@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-10-01 22:32:25 UTC
+! Last updated: 2026-10-02 05:06:15 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -661,7 +661,6 @@ docs.google.com##[data-action-id="freebird-open-help-me-ask-from-icon"]
 docs.google.com##[role="menuitem"]:has(> [data-action-id="freebird-open-help-me-ask-from-icon"])
 docs.google.com##[role="menuitem"]:has(> [data-action-id="freebird-open-help-me-ask-from-icon"]) + [role="separator"]
 docs.google.com##[jsname="Vjwl5e"]:has(#getting-started-dialog-navigation-view)
-||appsgenaiserver-pa.clients6.google.com/v1/genai/$xhr,domain=drive.google.com
 drive.google.com###WWNEkf
 drive.google.com##.p5rLxe.HBDJjb
 drive.google.com#%#//scriptlet('trusted-set-attr', '.searchboxInputFontClass[placeholder="Get answers from Drive"]', 'placeholder', 'Search in Drive')
@@ -677,6 +676,7 @@ drive.google.com##li[role="separator"]:has(+ span[data-is-tooltip-wrapper] [aria
 drive.google.com##[data-test-id="help-me-organize-chip-container"]
 drive.google.com##.oaTPh
 drive.google.com##.h-v:has([src="https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_ai_studio_x32.png"])
+||appsgenaiserver-pa.clients6.google.com/v1/genai/$xhr,domain=drive.google.com
 drive.google.com##.De8rPe
 drive.google.com###viewer-sidekick-button
 drive.google.com##.ux0ck:has([aria-label="Chapters"])
@@ -1548,13 +1548,13 @@ www.youtube.com##+js(json-edit-fetch-response, v2:$..adaptiveFormats[?@.audioTra
 www.youtube.com#%#//scriptlet('json-prune', '$..adaptiveFormats[?@.audioTrack.isAutoDubbed]')
 www.youtube.com##.ytp-menuitem-section-header
 www.youtube.com##.ytp-menuitem-section-header ~ .ytp-menuitem
-www.youtube.com##+js(json-edit, v2:$..paygatedQualitiesMetadata.*[?@.key=="1080p"];$..adaptiveFormats[?@.qualityLabel=="1080p"])
-www.youtube.com##+js(json-edit, v2:$..paygatedQualitiesMetadata.*[?@.key=="720p"];$..adaptiveFormats[?@.qualityLabel=="720p"])
-www.youtube.com##+js(json-prune, $[?..paygatedQualitiesMetadata.*[?.key=="1080p"]]..adaptiveFormats.*[?.qualityLabel=="1080p"])
-www.youtube.com##+js(json-prune, $[?..paygatedQualitiesMetadata.*[?.key=="720p"]]..adaptiveFormats.*[?.qualityLabel=="720p"])
-m.youtube.com##+js(json-edit, $..[?@.carouselTitleViewModel.teaserType=="WATCH_UI_TEASER_TYPE_CONVERSATIONAL_BOT"])
-m.youtube.com##+js(json-edit, $..[?@.carouselItemViewModel.teaserType=="WATCH_UI_TEASER_TYPE_CONVERSATIONAL_BOT"])
-www.youtube.com##+js(json-edit, $..playerOverlays..[?@.visibleOnLoad.key=="AUTO_CHAPTERS"])
+www.youtube.com##+js(json-edit, v2:$..paygatedQualitiesMetadata.qualityDetails[?@.key=="1080p"];$..adaptiveFormats[?@.qualityLabel=="1080p"])
+www.youtube.com##+js(json-edit, v2:$..paygatedQualitiesMetadata.qualityDetails[?@.key=="720p"];$..adaptiveFormats[?@.qualityLabel=="720p"])
+www.youtube.com##+js(json-prune, $[?..paygatedQualitiesMetadata.qualityDetails[?.key=="1080p"]]..adaptiveFormats[?.qualityLabel=="1080p"])
+www.youtube.com##+js(json-prune, $[?..paygatedQualitiesMetadata.qualityDetails[?.key=="720p"]]..adaptiveFormats[?.qualityLabel=="720p"])
+www.youtube.com##+js(json-edit, $..playerBar[?@.visibleOnLoad.key=="AUTO_CHAPTERS"])
+m.youtube.com##+js(json-edit, $..carouselTitles[?@.carouselTitleViewModel.teaserType=="WATCH_UI_TEASER_TYPE_CONVERSATIONAL_BOT"])
+m.youtube.com##+js(json-edit, $..carouselTitles[?@.carouselItemViewModel.teaserType=="WATCH_UI_TEASER_TYPE_CONVERSATIONAL_BOT"])
 www.youtube.com##yt-live-chat-banner-manager:has(yt-live-chat-banner-chat-summary-renderer)
 www.youtube.com##ytd-expandable-metadata-renderer[has-video-summary]
 www.youtube.com##[chip-style="STYLE_AI_MODE_CHIP"]
@@ -1952,6 +1952,7 @@ www.enikos.gr##[aria-labelledby="article-synopsis-heading"]
 www.evero.com##.giving:has([src="https://www.evero.com/wp-content/uploads/2025/10/AI-ASSIST.png"])
 www.foxbusiness.com##.dropdown-item--ai
 www.foxbusiness.com##.nav-item--ai
+fmhy.net##.item:has(> [href="/ai"])
 futurism.com##.menu-item:has([href="https://futurism.com/category/artificial-intelligence"])
 www.geeky-gadgets.com##.menu-item:has(> [href="https://www.geeky-gadgets.com/category/artificial-intelligence/"])
 github.com##.prc-ActionList-ActionListItem-So4vC:has(> [href="/settings/copilot"])
