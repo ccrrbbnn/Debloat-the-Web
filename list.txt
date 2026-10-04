@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-10-04 12:07:00 UTC
+! Last updated: 2026-10-04 21:08:44 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -899,7 +899,8 @@ www.lorealparisusa.com##.oap-beauty-genius
 www.lorealparisusa.com##.oap-beauty-genius-wrapper
 www.lorealparisusa.com##.oap-beauty-genius-footer-module
 www.lowes.com##.nav-diy-icons:has(> [data-linkid="mylow"])
-www.lowes.com##li:has(> [data-linkid="Mylow"])
+www.lowes.com##footer li:has(> [href="/ai"])
+www.lowes.com##[data-component-name="EntryPointMyLow"]
 www.lowes.com##.review-ai-summary
 ludwig.guru###i-ask-pdf
 ludwig.guru###i-rewrite
@@ -1080,6 +1081,8 @@ myapps.paychex.com##png-chat-launcher
 myapps.paychex.com##png-fab-help-chat-card
 www.paypal.com##[data-testid="MessageCenterHeader"] > div:has(> [data-testid="newConversationButton"])
 www.paypal.com##[data-testid="MessageCenterHeader"] > div:has(> [data-testid="newConversationButton"]) + div:has(> [role="img"])
+www.paypal.com##[data-scroll="conversations"] [data-testid="card"]:has(#avatar-item path[d="M12 2a14.757 14.757 0 0 0 10 10 14.757 14.757 0 0 0-10 10A14.758 14.758 0 0 0 2 12 14.757 14.757 0 0 0 12 2Z"])
+www.paypal.com##[data-testid="Inbox"] #botContainer:has(#ChatConversation [aria-label="ai-mark-fill icon"])
 www.pbtech.co.nz,www.pbtech.com##.ai-summary
 www.pbtech.co.nz,www.pbtech.com###aiReviewCard
 ||mypharmacy.pchealth.ca/remedy?variant=pchChat$subdocument,domain=www.pchealth.ca
@@ -1190,6 +1193,7 @@ render.com##.px-15[href^="https://claude.ai/new?q=Read%20from"]
 replug.io##.mantine-1fndqk8
 risingwave.com##div.bg-\[\#3a88fe\]:has(+ header):has(a[href*="interactive-ai"])
 rock30games.com##clever-search-toggler
+www.rockettes.com##.control--chat
 rows.com##footer div:has(> section [href="https://superhuman.com/docs"])
 rows.com##footer [role="list"]:has(section [href="https://superhuman.com/docs"]) > [role="listitem"]:has( ~ div > section [href="https://superhuman.com/docs"])
 rows.com##[role="listitem"] > [href="/ai"]
@@ -1562,7 +1566,10 @@ www.youtube.com##+js(json-edit, v2:$..paygatedQualitiesMetadata.qualityDetails[?
 www.youtube.com##+js(json-edit, v2:$..paygatedQualitiesMetadata.qualityDetails[?@.key=="720p"];$..adaptiveFormats[?@.qualityLabel=="720p"])
 www.youtube.com##+js(json-prune, $[?..paygatedQualitiesMetadata.qualityDetails[?.key=="1080p"]]..adaptiveFormats[?.qualityLabel=="1080p"])
 www.youtube.com##+js(json-prune, $[?..paygatedQualitiesMetadata.qualityDetails[?.key=="720p"]]..adaptiveFormats[?.qualityLabel=="720p"])
-www.youtube.com##+js(json-edit, $..playerBar[?@.visibleOnLoad.key=="AUTO_CHAPTERS"])
+m.youtube.com,www.youtube.com##+js(json-edit, $..[?@.playerBar.multiMarkersPlayerBarRenderer.visibleOnLoad.key=="AUTO_CHAPTERS"])
+m.youtube.com,www.youtube.com##+js(json-edit, $..[?@.panelIdentifier=="engagement-panel-macro-markers-auto-chapters"])
+www.youtube.com##+js(json-edit, $..[?@.horizontalCardListRenderer.header.richListHeaderRenderer.navigationButton.buttonRenderer.command.commandExecutorCommand.commands[0].updateEngagementPanelContentCommand.contentSourcePanelIdentifier.tag=="engagement-panel-macro-markers-auto-chapters"])
+m.youtube.com##+js(json-edit, $..[?@.horizontalCardListRenderer.header.richListHeaderRenderer.navigationButton.buttonRenderer.command.commandExecutorCommand.commands[2].engagementPanelHeaderShowNavigationButtonCommand.targetId=="engagement-panel-macro-markers-auto-chapters"])
 m.youtube.com##+js(json-edit, $..carouselTitles[?@.carouselTitleViewModel.teaserType=="WATCH_UI_TEASER_TYPE_CONVERSATIONAL_BOT"])
 m.youtube.com##+js(json-edit, $..carouselItems[?@.carouselItemViewModel.teaserType=="WATCH_UI_TEASER_TYPE_CONVERSATIONAL_BOT"])
 www.youtube.com##yt-live-chat-banner-manager:has(yt-live-chat-banner-chat-summary-renderer)
@@ -2052,8 +2059,6 @@ min.io#?#.new-section:has-text(One Foundation. Every AI Workflow.)
 mixam.com###front-chat-iframe
 forums.opera.com##.category-54
 forums.opera.com##.category-61
-www.paypal.com##[data-scroll="conversations"] [data-testid="card"]:has(#avatar-item path[d="M12 2a14.757 14.757 0 0 0 10 10 14.757 14.757 0 0 0-10 10A14.758 14.758 0 0 0 2 12 14.757 14.757 0 0 0 12 2Z"])
-www.paypal.com##[data-testid="Inbox"] #botContainer:has(#ChatConversation [aria-label="ai-mark-fill icon"])
 www.pcguide.com##.menu-item-150141
 pnpm.io###copy-page-button-container
 prezi.com#?#details > summary > h3:has-text(Can I use Prezi with slides I made in ChatGPT?):upward(2)
@@ -2134,10 +2139,6 @@ www.youtube.com#?#.ytwHowThisWasMadeSectionViewModelBodyHeader:has-text("Made wi
 www.youtube.com#?#.ytwHowThisWasMadeSectionViewModelBodyHeader:has-text("Made with AI"):upward(ytd-watch-flexy):style(--new-text-2:"Disclosed in video description")
 www.youtube.com###movie_player::before:style(content:var(--new-text-1); position:absolute; top:12px; right:12px; background:#ff0033; color:#fff; padding:6px 12px 15px; border-radius:6px; font-size:40px; font-weight:700; z-index:999; box-shadow:0 2px 10px rgba(0,0,0,0.6); border:2px solid #fff;)
 www.youtube.com###movie_player::after:style(content:var(--new-text-2); z-index:99999; position:absolute; top:68px; right:65px;)
-m.youtube.com,www.youtube.com##+js(json-edit, $..[?@.playerBar.multiMarkersPlayerBarRenderer.visibleOnLoad.key=="AUTO_CHAPTERS"])
-m.youtube.com,www.youtube.com##+js(json-edit, $..[?@.panelIdentifier=="engagement-panel-macro-markers-auto-chapters"])
-www.youtube.com##+js(json-edit, $..[?@.horizontalCardListRenderer.header.richListHeaderRenderer.navigationButton.buttonRenderer.command.commandExecutorCommand.commands[0].updateEngagementPanelContentCommand.contentSourcePanelIdentifier.tag=="engagement-panel-macro-markers-auto-chapters"])
-m.youtube.com##+js(json-edit, $..[?@.horizontalCardListRenderer.header.richListHeaderRenderer.navigationButton.buttonRenderer.command.commandExecutorCommand.commands[2].engagementPanelHeaderShowNavigationButtonCommand.targetId=="engagement-panel-macro-markers-auto-chapters"])
 www.youtube.com#%#(()=>{let t=!1;const i={apply:(i,n,a)=>{try{!t&&window.ytInitialData&&(window.ytInitialData=JSON.parse(JSON.stringify(window.ytInitialData)),t=!0)}catch(t){}return Reflect.apply(i,n,a)}};window.Promise.prototype.then=new Proxy(window.Promise.prototype.then,i)})();
 studio.youtube.com##ytcp-sam-chat
 studio.youtube.com###suggestion-button:has([aria-label="Chapters available"])
