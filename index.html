@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-10-06 06:02:31 UTC
+! Last updated: 2026-10-06 18:11:02 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -291,6 +291,20 @@ coolors.co##.homepage_tool[href="/color-bot"]
 coolors.co###footer_menu [href="/color-bot"]
 coolors.co###generator_ai-btn
 coolors.co###popover-hint:has(.icon-ai-sparkles-18px)
+cortex-docs.paloaltonetworks.com##[data-testid="ai-chat-button"]
+cortex-docs.paloaltonetworks.com###how-can-i-help-you-today
+cortex-docs.paloaltonetworks.com###how-can-i-help-you-today + p:has([aria-label="Search our docs the easy way..."])
+# TODO: Search bar autocomplete suggestions if AI was previously used
+cortex-docs.paloaltonetworks.com##[data-testid="search-ask-question"]
+cortex-docs.paloaltonetworks.com##button[aria-label="Ask"]
+cortex-docs.paloaltonetworks.com##[data-testid="dropdown-menu"] > [role="menuitem"]:has(path[d^="M326.6 204.1L465.2 256 326.6 307.9c-8.7"])
+cortex-docs.paloaltonetworks.com##[data-testid="dropdown-menu"] > [role="menuitem"]:has(path[d^="M326.6 204.1L465.2 256 326.6 307.9c-8.7"]) + [role="separator"]
+cortex-docs.paloaltonetworks.com##[data-testid="dropdown-menu"] > [role="menuitem"]:has(path[d^="M475.3 209.6c11.6-34.9 7.6-73.1-11-104.8-27"])
+cortex-docs.paloaltonetworks.com##[data-testid="dropdown-menu"] > [role="menuitem"]:has(path[d^="M475.3 209.6c11.6-34.9 7.6-73.1-11-104.8-27"]) + [role="separator"]
+cortex-docs.paloaltonetworks.com##[data-testid="dropdown-menu"] > [role="menuitem"]:has(path[d^="M100.4 340.5l100.7-56.5 1.7-4.9-1.7-2.7-4.9"])
+cortex-docs.paloaltonetworks.com##[data-testid="dropdown-menu"] > [role="menuitem"]:has(path[d^="M100.4 340.5l100.7-56.5 1.7-4.9-1.7-2.7-4.9"]) + [role="separator"]
+cortex-docs.paloaltonetworks.com##[data-testid="dropdown-menu"] > [role="menuitem"]:has(path[d^="M334.7 50c-21.4-20.9-55.6-20.9-77 0L52.3 251.4c-7.1"])
+cortex-docs.paloaltonetworks.com##[data-testid="dropdown-menu"] > [role="menuitem"]:has(path[d^="M363.1 508.5c8.1 3.1 17.3 2.9 25.4-1l105.4-50.7C505"])
 www.crateandbarrel.com##.swat-review-summary-container-border
 docs.cribl.io##[data-action="chatgpt"]
 docs.cribl.io##[data-action="claude"]
@@ -765,6 +779,8 @@ workspace.google.com##section[data-module="TemplateLocalizedModuleContainer"]:ha
 workspace.google.com##.ORSkHc:has([data-appset-type="49"])
 ||ai-search-dot-gsuite-staging.appspot.com/api/answer$xhr,domain=workspace.google.com
 workspace.google.com##.summary
+www.graphed.com##[data-sentry-component="BlogCTADashboard"]
+www.graphed.com##[data-sentry-component="BlogCTAPdf"]
 hwbusters.com##.hwb-ai-root
 www.healio.com###healio-ai-banner
 www.healio.com##body {padding-top: 0px !important}
@@ -1962,6 +1978,8 @@ code.org##.container > .contentful-container:has([data-testid="content-card"] [h
 code.org##section:has(img[src*="TEACHER_DASHBOARD___MIX___MOVE_WITH_AI"]):has(img[src*="AIOceans-16x9-min_copy.jpg"]):has(img[src*="action-block-music-lab-jam-session.png"])
 code.org##div:has(> [href="/hour-of-ai"][class^="genericButton-module__button___"])
 code.org#?#h2:has-text(Start with the Hour of AI):upward(section)
+cortex-docs.paloaltonetworks.com##body:has(.page-no-toc) header:has(> .layout-wide\:page-no-toc\:hidden)
+cortex-docs.paloaltonetworks.com##header > .float-right:has(button[aria-label="Ask"])
 dbcode.io##.dr-areaitem[data-area="AI"]
 dev.to###default-sidebar-element-ai
 dev.to###default-sidebar-element-llm
@@ -2046,6 +2064,7 @@ www.humblebundle.com##.bundle:is([href*="/ai-"], [href*="-ai-"], [href*="claude-
 central.insightsoftware.com###forethought-chat
 www.instagram.com##+js(json-edit, $..[?@.node..ai_label_info.gen_ai_detection_method], , propsToMatch, /graphql/query)
 kagi.com##.dropdown.filter-item:has(>.dd-list[data-name="ai"] .inner-label[aria-current="true"]:not([href*="&ai="]))
+www.linkedin.com##[data-testid="lazy-column"] > div > div:has(div > [data-display-contents="true"] .dj9t1.dj9xj.dj901.dj94j.dj98q.dj9abz.dj9ae8.dj9aih.dj9bg1.dj9dbj.dj97s #InitialStateHowYouFitSlot)
 www.livescience.com##.meganav-item__link[data-before-rewrite-localise="/technology/artificial-intelligence"]
 www.lowes.com##.ChatInviteButton
 developers.facebook.com##[class="x1xmf6yo"]
