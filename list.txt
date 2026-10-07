@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-10-07 13:03:12 UTC
+! Last updated: 2026-10-07 22:57:00 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -216,7 +216,7 @@ www.britannica.com##.ai-qna-module
 www.browserstack.com###promo-notification:has([href^="https://www.browserstack.com/events/qa-leadership-summit-autumn-2026"])
 www.browserstack.com##.bstack-mm-li:has([data-title="AI Agents"])
 www.browserstack.com###menu-item-153460
-www.bunnings.com.au##[aria-label="Ask Bunnings AI"]
+www.bunnings.com.au##button:has(.bg-ai-sparkle-gradient)
 ||www.businessinsider.com/ajax/stream-ai-search$xhr,domain=www.businessinsider.com
 www.businessinsider.com##.catch-me-up-quickly
 www.businessinsider.com##.ai-summary-questions
@@ -893,6 +893,9 @@ karmasearch.org###search-other-menu .flex-col:has([src="/_nuxt/img/ai.85b95e0.sv
 www.kathimerini.gr##.text-to-speech-wrap
 www.kathimerini.gr###gas-summary-root
 www.kiehls.com##.swat-review-summary-container-border
+||agenticapplications.googleapis.com$xhr,domain=www.kmart.com.au
+www.kmart.com.au##[class^="ToolTipstyled__ToolTipContainer"]:has(.shop-assistant-chat-button)
+www.kmart.com.au##chat-messenger
 www.kohls.com##div:has(> button[aria-label="Ask Kohl's"])
 ||gstatic.com/cloud/ai/commerce_ai_ui/1.0.0/static.js$domain=kohls.com
 www.kohls.com##button[aria-label="Shop Similar - Find similar products using AI assistance"]
@@ -913,6 +916,8 @@ www.lesnumeriques.com##[data-lemrock-component]
 www.lg.com##.MuiLink-root[href="https://www.lg.com/us/affectionate-intelligence-ai"]
 www.linkedin.com##.share-creation-state__writing-assistant-container--premium
 www.linkedin.com##div.pvs-entity__secondary-action-container:has(svg[data-test-icon="premium-signal-ai-small"])
+www.linkedin.com##[data-testid="lazy-column"] > div > div:has(div > div[data-display-contents="true"] > div[componentkey] > div > #InitialStateHowYouFitSlot)
+www.linkedin.com##.job-details-module:has(.guide-entry-point-container)
 www.linkyhost.com##nav[class^="homepage-header_"] [href="/build"]
 www.linkyhost.com##footer [href="/build"]
 www.linkyhost.com##footer [href="/use-cases/host-ai-generated-website"]
@@ -1369,6 +1374,8 @@ thenewstack.io##.search-disclaimer
 thenewstack.io##.search-input[placeholder="This is AI-powered search. Type a prompt."]:remove-attr(placeholder)
 thenewstack.io#%#//scriptlet('remove-attr', 'placeholder', '.search-input[placeholder="This is AI-powered search. Type a prompt."]')
 thenewstack.io##.masthead-search-icon path[d^="M18 4a4 4 0 0 0-4 4 4 4 0"]
+||app.thestorygraph.com/personalized-preview.turbo_stream$xhr,domain=app.thestorygraph.com
+app.thestorygraph.com##.storygraph-preview-pane
 www.thermofisher.com##.ask-ai-widget-container
 www.tiktok.com##+js(json-prune-fetch-response, itemList.[-].aigcLabelType itemList.[-].moderationAigcLabelType, , propsToMatch, /item_list)
 www.tiktok.com##+js(json-edit-fetch-response, $.itemList.[?.ad_info][?.author.uniqueId=="lovart_ai"], propsToMatch, /api/recommend/item_list/)
@@ -2148,6 +2155,7 @@ support.smartbear.com###embedded-messaging
 sourceforge.net##.m-sidebar-widget:has(.main-image:is([alt="Build Agents and Models on One Platform Icon"], [alt="Ship Agents Faster Icon"]))
 squareup.com###q-messenger-frame[title="Qualified Messenger"]
 ||stackoverflow.com/ai-assist/$xhr,1p
+askubuntu.com,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com###left-sidebar .nav-links > .ps-relative:has(.stack-internal-left-tile-image--pinned)
 stackoverflow.blog##.my4:has(> a[href="/ai/"])
 stackify.com##.sidebar [href="https://stackify.com/tag/ai/"]
 docs.stripe.com##.⚙x1uodc[role="toolbar"]
