@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-10-13 13:56:51 UTC
+! Last updated: 2026-10-13 22:29:26 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -496,7 +496,7 @@ www.gadgetreview.com##brambles-publisher
 www.gettyimages.com##[data-testid="AIGenerator"]
 app.gigasheet.com##.ag-side-button:has(#sheetAssistant)
 ||api.individual.githubcopilot.com/$xhr,domain=github.com
-github.com##[data-testid="top-bar-actions"] > .hide-md:has(> .CopilotItems-module__Wrapper__BFG9q)
+github.com##[data-testid="top-bar-actions"] > .hide-md:has([data-component="ActionMenu.Button"][class*=" CopilotMenu__"])
 github.com##[data-component="ActionList.Group"]:has([data-testid="quick-search-suggestion"][href="/copilot"])
 github.com##[data-component="ActionList.Divider"]:has(+ [data-component="ActionList.Group"] [data-testid="quick-search-suggestion"][href="/copilot"])
 github.com##[id$="-tab-copilot_chat_custom_instructions"]:has(.octicon-eye-closed)
@@ -1963,6 +1963,7 @@ zbporn.com##.border:has(> [href="https://zbporn.com/?action=trace&id=490101"])
 zhentube.com###menu-item-33914
 zhentube.com##a[href="https://zhentube.com/aisexslut"]
 |https://chatgpt.com^$document
+|https://github.com/copilot^$document
 ||assistant.kagi.com^$document
 ||claude.ai^$document
 ||dictionary.cambridge.org/assistant^$document
@@ -1970,7 +1971,6 @@ zhentube.com##a[href="https://zhentube.com/aisexslut"]
 ||copilot.microsoft.com^$document
 ||grok.com^$document
 ||gemini.google.com/app^$document
-||github.com/copilot^$document
 ||glyphy.io/name-generator^$document
 ||imgflip.com/ai-meme^$document
 ||kagi.com/summarizer^$document
@@ -2078,9 +2078,9 @@ github.dev###chat\.statusBarEntry
 ||main.vscode-cdn.net/extensions/chat.json$xhr,domain=github.dev
 ||marketplace.visualstudio.com/_apis/public/gallery/vscode/github/copilot-chat/$xhr,domain=github.dev
 docs.github.com##.SearchOverlay_footer__45kw_
-docs.github.com##[class^="ProductSelectionCard_cell__"]:has([title="GitHub Copilot"])
+docs.github.com##div[class^="ProductSelectionCard_cell__"]:has([role="listitem"]:first-child > [href="/en/copilot"])
 docs.github.com##[data-testid="carousel-items"] > [class^="Primer_Brand__Card-module__Card__outer___"]:has([href="/en/free-pro-team@latest/get-started/learning-to-code"])
-docs.github.com##[data-container="toc"] > .mb-3.ml-3:has([class*="ViewMarkdownButton_button__"])
+docs.github.com##div[class^="ViewMarkdownButton_belowIntroPlacement__"]
 about.gitlab.com##.banner:has(> [href="https://about.gitlab.com/blog/gitlab-duo-agent-platform-delivers-400-percent-roi/"])
 about.gitlab.com##.stacking-cards__card:has([data-ga-name="gitlab-duo"])
 gitlab.com##[data-track-label="model_registry"]
