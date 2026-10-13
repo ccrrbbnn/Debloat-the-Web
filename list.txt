@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-10-13 00:26:33 UTC
+! Last updated: 2026-10-13 13:56:51 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -437,6 +437,7 @@ exceladept.com##div > [href^="https://www.google.com/search?udm=50"]
 exceljet.net##.hero-chatbot-link
 exceljet.net##.block-chatbot-cta
 exceljet.net##.chatbot-callout
+www.expressvpn.com##li:has(> [href="/expressai"])
 portal.expressvpn.com##.group\/collapsible:has([href="/expressai"])
 www.extendoffice.com##.uk-margin-remove-last-child:has([src="//cdn.extendoffice.com/images/stories/ads-siluvia/kte-ads/kutools-for-excel-ai-1.png"])
 www.extendoffice.com##.uk-margin-remove-last-child tr:has([href^="https://www.extendoffice.com/product/kutools-for-excel/kutools-excel-ai-assistant.html"])
@@ -523,7 +524,7 @@ github.com##[data-component="ActionList.Group"]:has(> [aria-label="Copilot"]) + 
 github.com##[data-testid="copilot-menu-items"]:remove()
 github.com##[data-component="IconButton"]:has(> .octicon-copilot)
 github.com##.prc-ButtonGroup-ButtonGroup-vFUrY:has([data-testid="copilot-ask-menu"])
-github.com##[data-component="ActionList.Item"]:has(img[src^="https://github.githubassets.com/assets/github-copilot-app-light-"])
+github.com##[data-component="ActionList.Item"]:has(img[src^="https://github.githubassets.com/assets/github-copilot-app-"])
 github.com##.Footer-module__footerButtonWrapper__RL1TZUq
 github.com##.Footer-module__footerButtonWrapper__eCAAR
 github.com##[partial-name="copilot-assisted-review-upsell"]
@@ -779,6 +780,8 @@ trends.google.com##button[aria-label="Suggest search terms"]
 workspace.google.com##.TemplateHeader_headerNavGroup:has(> [data-g-action="ai"])
 workspace.google.com#?#div._innerGrid_1u063_113 > div._card_1u063_136:has-text(Premium AI built-in)
 workspace.google.com##gws-card-wrapper:is([href="/solutions/ai/"], [href="/products/notebooklm"])
+workspace.google.com##.Butterbar_initial:has(> [href^="https://workspace.google.com/intelligence/"])
+workspace.google.com##.CesChatMessenger_chatMessenger
 workspace.google.com##section[data-module="TemplateLocalizedModuleContainer"]:has(._gemini_1j2q4_140)
 workspace.google.com##section[data-module="TemplateLocalizedModuleContainer"]:has(._gemini_1j2q4_140) + [data-module="TemplateSpacer"]
 workspace.google.com##.ORSkHc:has([data-appset-type="49"])
