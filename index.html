@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-10-12 15:01:38 UTC
+! Last updated: 2026-10-13 00:26:33 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -523,7 +523,7 @@ github.com##[data-component="ActionList.Group"]:has(> [aria-label="Copilot"]) + 
 github.com##[data-testid="copilot-menu-items"]:remove()
 github.com##[data-component="IconButton"]:has(> .octicon-copilot)
 github.com##.prc-ButtonGroup-ButtonGroup-vFUrY:has([data-testid="copilot-ask-menu"])
-github.com##[data-component="ActionList.Item"]:has([class^="CopilotAppOpenAction-module_"])
+github.com##[data-component="ActionList.Item"]:has(img[src^="https://github.githubassets.com/assets/github-copilot-app-light-"])
 github.com##.Footer-module__footerButtonWrapper__RL1TZUq
 github.com##.Footer-module__footerButtonWrapper__eCAAR
 github.com##[partial-name="copilot-assisted-review-upsell"]
@@ -834,6 +834,7 @@ imgflip.com##.mm-toggle-ai
 imgflip.com#?##gen-qa > .gen-q:has-text(Do you have a wacky AI that can write memes for me?)
 imgflip.com#?##gen-qa > p:has-text(Funny you ask. Why yes, we do. Here you go:)
 indianstartupnews.com###nudgeai-widget
+www.infobae.com##.ai-tools
 www.infomaniak.com##section[class^="Banner-module--banner--"]:has([href="https://euria.infomaniak.com/"])
 inkbunny.net##:is(.widget_thumbnailCompleteFromSubmission,.widget_thumbnailLargeCompleteFromSubmission,.widget_thumbnailHugeCompleteFromSubmission):has(img:is([title*="ai art"], [title*="ai assisted"], [title*="ai generated"], [title*="ai-generated"], [title*="aigenerated"], [title*="stable diffusion"]))
 ||app.alhena.ai/ai_agents/shopify_script_tag.js$script,domain=www.innosupps.com
@@ -1358,6 +1359,9 @@ talent.performyard.com##+js(json-prune-fetch-response, *, , propsToMatch, /v1/ai
 www.synology.com##.s-nvbr__service-ai
 www.sysdig.com##.cc-nav-announcement:has([href="/blog/introducing-sysdig-secure-ai"])
 www.sysdig.com###pfCfChatContainer
+www.target.com##div[class^="styles_agenticChatWrapper__"]
+www.target.com##.styles_withAgenticEntryPoint__Idg_a {--agentic-entry-width: 0px !important}
+www.target.com##button[aria-label="Ask Target"]
 www.target.com##.sc-35985976-1
 www.target.com#?#[data-test="questionUserNickname"]:has-text(AI Shopping Assistant):upward([data-test="question"])
 www.target.com##div:has(> [data-test="review-summary-title"])
