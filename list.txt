@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-10-14 16:56:22 UTC
+! Last updated: 2026-10-14 21:28:55 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -2095,6 +2095,8 @@ github.com##.prc-ActionList-ActionListItem-So4vC:has(> [href="/settings/copilot"
 ||github.com/github-copilot/chat$xhr,1p
 ||github.com/static/images/modules/dashboard/promos/copilot-$image,1p
 github.com###automation > .lp-SectionTemplate > .lp-SectionBlock > .lp-SectionBlock-content > :is(.lp-SectionIntro, .lp-SectionHero)
+github.com##.js-timeline-item:has([data-test-selector="pr-timeline-events-actor-avatar"][data-hovercard-type="copilot"])
+github.com##.js-timeline-item:has(.TimelineItem-avatar[data-hovercard-url="/copilot/hovercard?bot=copilot-pull-request-reviewer"])
 github.blog##li:has(> [href="https://github.blog/ai-and-ml/"])
 github.dev###chat\.statusBarEntry
 ||api.github.com/copilot_internal/$xhr,domain=github.dev
