@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-10-15 11:12:01 UTC
+! Last updated: 2026-10-15 16:42:57 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -1658,6 +1658,7 @@ m.youtube.com,www.youtube.com##+js(json-edit, $..[?@.playerBar.multiMarkersPlaye
 www.youtube.com##+js(json-edit, $..[?@.panelIdentifier=="engagement-panel-macro-markers-auto-chapters"].content)
 m.youtube.com##+js(json-edit, $..[?@.panelIdentifier=="engagement-panel-macro-markers-auto-chapters"])
 m.youtube.com##+js(json-edit, $..[?@.horizontalCardListRenderer.header.richListHeaderRenderer.navigationButton.buttonRenderer.command.commandExecutorCommand.commands[2].engagementPanelHeaderShowNavigationButtonCommand.targetId=="engagement-panel-macro-markers-auto-chapters"])
+m.youtube.com##+js(json-edit, $..[?@.horizontalCardListRenderer.header.richListHeaderRenderer.navigationButton.buttonRenderer.command.commandExecutorCommand.commands[0].updateEngagementPanelContentCommand.contentSourcePanelIdentifier.tag=="engagement-panel-macro-markers-auto-chapters"])
 www.youtube.com##ytd-watch-flexy:has([target-id="engagement-panel-macro-markers-auto-chapters"]) .ytp-tooltip-progress-bar-pill-title
 www.youtube.com##ytd-watch-flexy:has([target-id="engagement-panel-macro-markers-auto-chapters"]) .ytp-chapter-container
 www.youtube.com##ytd-watch-flexy:has([target-id="engagement-panel-macro-markers-auto-chapters"]) ytd-horizontal-card-list-renderer[modern-chapters]
@@ -2101,8 +2102,6 @@ github.com##.prc-ActionList-ActionListItem-So4vC:has(> [href="/settings/copilot"
 ||github.com/github-copilot/chat$xhr,1p
 ||github.com/static/images/modules/dashboard/promos/copilot-$image,1p
 github.com###automation > .lp-SectionTemplate > .lp-SectionBlock > .lp-SectionBlock-content > :is(.lp-SectionIntro, .lp-SectionHero)
-github.com##.js-timeline-item:has([data-test-selector="pr-timeline-events-actor-avatar"][data-hovercard-type="copilot"])
-github.com##.js-timeline-item:has(.TimelineItem-avatar[data-hovercard-url="/copilot/hovercard?bot=copilot-pull-request-reviewer"])
 github.blog##li:has(> [href="https://github.blog/ai-and-ml/"])
 github.dev###chat\.statusBarEntry
 ||api.github.com/copilot_internal/$xhr,domain=github.dev
