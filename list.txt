@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-10-20 11:15:46 UTC
+! Last updated: 2026-10-20 16:40:24 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -485,6 +485,7 @@ www.g4media.ro###g4-ai-chat-root
 www.gadgetreview.com##brambles-publisher
 www.gettyimages.com##[data-testid="AIGenerator"]
 app.gigasheet.com##.ag-side-button:has(#sheetAssistant)
+www.gitbook.com##[data-framer-name="Links"] [data-framer-name="Group 16"]:has([aria-label="AI summary links"])
 cortex-docs.paloaltonetworks.com,gitbook.com##[data-testid="ai-chat-button"]
 cortex-docs.paloaltonetworks.com,gitbook.com##button[aria-label="Ask"]
 gitbook.com##[data-testid="dropdown-menu"] > [role="menuitem"]:has(path[d^="M12.8916 1.06265C12.921 0.979101 13.0392"])
@@ -980,6 +981,8 @@ www.lowes.com##[data-component-name="EntryPointMyLow"]
 www.lowes.com##.review-ai-summary
 ludwig.guru###i-ask-pdf
 ludwig.guru###i-rewrite
+macmdviewer.com##.ai-share
+macmdviewer.com##.footer-col li:has(> [href="/docs/integrations"])
 www.macys.com##.convo-commerce-wrapper:has(> #ask-ai-gecx-button)
 www.macys.com##.divider-icon:has(+.google-prompts)
 www.macys.com##.google-prompts
@@ -1247,6 +1250,21 @@ www.raspberrypi.com##.DocSearch-HitsFooter:has(> .DocSearch-AskAI)
 manual.raycast.com##[class^="button-module__"][href^="raycast://extensions/raycast/ai/ai-chat?"]
 www.razer.com##[data-more-menu-uid="mm-razer-ai-node"]
 www.razer.com##li:has(> [href="https://www.razer.com/newsletter/ai"])
+docs.readme.com##button[aria-label="ai.asAiAriaLabel"]
+docs.readme.com##[aria-labelledby="AppSearch-ask-ai-label"]
+||docs.readme.com/developers/api-next/v2/owlbot/suggest_questions$xhr,domain=docs.readme.com
+docs.readme.com##.tippy-content .Menu-Item_link:has([data-name="sparkles"])
+docs.readme.com##.tippy-content .Menu-Item_link:has([data-name="sparkles"]) + .Menu-Divider
+docs.readme.com##.tippy-content .Menu-Item_link[href^="https://chat.openai.com/?q="]
+docs.readme.com##.tippy-content .Menu-Item_link[href^="https://claude.ai/new?q="]
+docs.readme.com##.tippy-content .Menu-Item_link[href^="https://claude.ai/new?q="] + .Menu-Divider
+docs.readme.com##.tippy-content .Menu-Header:has(+ .Menu-Item_link [data-name="cursor"])
+docs.readme.com##.tippy-content .Menu-Item_link:has([data-name="cursor"])
+docs.readme.com##.tippy-content .Menu-Item_link:has([data-name="vscode"])
+docs.readme.com##.tippy-content .Menu-Item_link:has([data-name="clipboard"])
+docs.readme.com##.tippy-content .Menu-Item_link:has([data-name="terminal"])
+docs.readme.com##.tippy-content .Menu-Item_link:has([data-name="terminal"]) + .Menu-Divider
+docs.readme.com##.rm-AskAi-floating-input
 realpython.com##.dropdown-item[href="/mentor/"]
 realpython.com##.card:has([href="/mentor/"]) {visibility: hidden}
 www.real.gr###real-article-summary-holder
@@ -1305,6 +1323,8 @@ www.scribd.com##[data-e2e="doc-actions-ask-ai-button-sticky_metadata_column"]
 www.scribd.com#?#[data-testid="mobile-actions-bottom-bar"] button:has-text(Ask AI)
 docs.scylladb.com##biel-button
 www.secnews.gr##[id^="sngai-"]
+selfh.st##.tile-slot:has(.tile-tag[href="https://selfh.st/apps/?tag=Artificial%20Intelligence"])
+selfh.st###tagFilterOptions > .custom-multiselect-option[aria-selected="false"]:has(> #tag-Artificial-Intelligence)
 www.semrush.com###vwo-ai-visibility-cta
 develop.sentry.dev,docs.sentry.io##.search_search-bar__XzLtg > span.text-\[var\(--desatPurple10\)\].hidden.md\:inline
 develop.sentry.dev,docs.sentry.io##.search_search-bar__XzLtg > .kapa-ai-class
@@ -2237,6 +2257,7 @@ docs.rackspace.com##.rm-AIDropdown
 www.raspberrypi.com##.box[href="/documentation/computers/ai.html"]
 www.raycast.com##[class$="__navLink"][href="/core-features/ai"]
 www.raycast.com##[class$="__footerLink"][href="/store/category/ai"]
+docs.readme.com##.rm-AIDropdown
 realpython.com##.sidebar-module > [href="/tutorials/ai/"]
 docs.redhat.com##[data-dropdown-id="main-menu__dropdown--AI"]
 www.reddit.com#?#[slot="posts"] > div.mx-md:has(faceplate-hovercard[data-id="community-hover-card"]:matches-attr(aria-label="/^r\/(3amAI|ADULT_ART_AI|AgentsOfAI|AI_Agents|Ai_and_Digital_arts|AI_ART|AI_Art_Department|AI_Art_Requests|AI_Art_Series|ai_artworld|AI_developers|Ai_Dragons|Ai_HarryPotter|Ai_Husbando_Art|Ai_PeopleOfColor_Art|Ai_Pokemon|Ai_StarWars_Art|AIAliveSentient|aiArt|AiArt_Psych|AIartbattle|AiArtChallenge|aiartcodex|AIArtCreator|aiARTistsUNITE|AIArtistWorkflows|AiArtLounge|AIArtPorn|AiArtShow|AIArtwork|AiArtWow|AIArtZone|aibeingstupid|AiCarArt|AICatgirls|AICharacterDrawing|AiChatGPT|aiCoffeeArt|AiComicBookArt|AiComicBookArt|AIEscher|aifails|AIfreakout|aigamedev|AIGameOfThrones|aiGayArt|AIGenArt|AiGenCarporn|AIGeneratedArt|aigeneratedmemes|AIgeneratednightmares|AIGeneratedPokemon|AIGirlfriend|AiGirlsSexyArt|aigoddesses|AIGrinding|AiHentaiArtwork|Aihotgirl|aiHub|AIisfuckinglit|ailookbook|AImsorryjon|aiMusic|AIpornhub|aipromptprogramming|AIRetrofuturism|aisettings|aispacegirls|aitoolsupdate|AiUncensored|aivideo|AIVideo4all|AiVideoGameArt|AIVisibile|aiwars|AiWholesome|aiyiff|AmazingAI|AnimeAIArt|anyaiart|Art_of_AI|Arthemy|artificial|ArtificialInteligence|ArtIsForEveryone|bard|bigsleep|Celebrity_Ai_Photos|CharacterAI|CharacterAI_No_Filter|Chatbots|ChatGPT|ChatGPTCoding|ChatGPTPro|civitai|claude|ClaudeAI|comfyui|Copilot|craiyon|CursedAI|cursedAIpics|dalle2|dallemini|dawnAi|deepdream|DeepFloydIF|deeplearning|DefendingAIArt|DimensionTraveler|DiscoDiffusion|dndai|DragonDiffusion|DreamArchitecture|DreamBooth|dreamcasting|DreamstudioAI|DumbAI|DuneAI|DungeonoftheMadMage|EternalAI_org|FanArtAI|FiddlartAi|FurAI|GarfieldAI_art|GeminiAI|GenAI4all|generateforme|generative|generativeAI|GenTube|GithubCopilot|GoogleAI|GoogleAIGoneWild|GoogleGeminiAI|GPT3|hellaflyai|HighEndAI|HQ_AI_Ecchi|ImageGenerators|Indian_AI_Girls|IndianArtAI|indie_games_and_ai|invokeai|JustOneWord|layla_ai|Lensa|LensaFails|leonardoai|lotr_ai_art|lotr_ai_art|LOTRAI|LovingOpenSourceAI|MachineLearning|MBVirtualVixens|MediaSynthesis|microsoft_365_copilot|midjourney|MidJourney2Dalle|midjourney_imagine|MidjourneyArtworks|MidJourneyDiscussions|MidjourneyFails|MidJourneyFantasy|MidjourneyPrompts|momaia|narrative_ai_art|nightcafe|nijijourney|nonutsnightmare|NovelAi|OpenAI|perplexity_ai|Pixai_Official|ProductHunters|PromptArt|promptcraft|PromptDesign|PromptEngineering|PromptSharing|promptsideas|RenaissanceArt_AI|riffusion|sdforall|sdnsfw|SeaArtAI|sexbotlovers|shittyAiArt|SillyTavernAI|singularity|SoraAi|StableDiffusion|StableDiffusionInfo|StableDiffusionUI|starryai|StarWarsAIArt|stupidAI|SukiAI|SunoAI|te_diffusion|TheAIBrain|WaifuDiffusion|weirddalle|WomboArt|Wombodream|wonderAI|WorldbuildingWithAI)$/"))
@@ -2270,6 +2291,7 @@ shopify.dev##[data-section-name="content-card"][class^="_HomeCard_"]:has([href="
 www.semrush.com##[data-test="toc-widget-custom"]
 support.smartbear.com###embedded-messaging
 sourceforge.net##.m-sidebar-widget:has(.main-image:is([alt="Build Agents and Models on One Platform Icon"], [alt="Ship Agents Faster Icon"]))
+||connect.letslinc.com/v1/webChat.js$script,domain=www.spirithalloween.com
 squareup.com###q-messenger-frame[title="Qualified Messenger"]
 ||stackoverflow.com/ai-assist/$xhr,1p
 askubuntu.com,serverfault.com,stackexchange.com,stackoverflow.com,superuser.com###left-sidebar .nav-links > .ps-relative:has(.stack-internal-left-tile-image--pinned)
