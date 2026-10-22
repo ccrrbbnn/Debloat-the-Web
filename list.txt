@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-10-22 16:57:50 UTC
+! Last updated: 2026-10-22 21:23:32 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -666,6 +666,7 @@ developers.google.com##.devsite-banner-announcement:has([href="/analytics/devgui
 developers.google.com##devsite-key-takeaways-panel
 developers.google.com##.devsite-explain-code
 developer.chrome.com,developers.google.com,docs.cloud.google.com,knowledge.workspace.google.com,web.dev##devsite-search-summary
+docs.google.com###docs-sidekick-gen-ai-promo-button-container
 docs.google.com###textToSpeechToolbarButton
 docs.google.com##.superfab-aitextgeneratormenu-button
 docs.google.com###docs-sidekick-button-container
@@ -715,7 +716,11 @@ drive.google.com##.p5rLxe.HBDJjb
 drive.google.com#%#//scriptlet('trusted-set-attr', '.searchboxInputFontClass[placeholder="Get answers from Drive"]', 'placeholder', 'Search in Drive')
 drive.google.com#%#//scriptlet('trusted-set-attr', 'button[aria-label="Search Google Drive"] > svg[viewBox="0 -960 960 960"]', 'viewBox', '0 0 24 24')
 drive.google.com#%#//scriptlet('trusted-set-attr', 'button[aria-label="Search Google Drive"] path', 'd', 'M20.49,19l-5.73-5.73C15.53,12.2,16,10.91,16,9.5C16,5.91,13.09,3,9.5,3S3,5.91,3,9.5C3,13.09,5.91,16,9.5,16 c1.41,0,2.7-0.47,3.77-1.24L19,20.49L20.49,19z M5,9.5C5,7.01,7.01,5,9.5,5S14,7.01,14,9.5S11.99,14,9.5,14S5,11.99,5,9.5z')
-drive.google.com##[role="menuitem"]:has(img[src="https://ssl.gstatic.com/docs/doclist/images/mediatype/icon_1_ai_studio_x16.png"]):remove()
+drive.google.com##[data-list-type="MENU"] > [role="menuitem"]:has(path[d^="M12 18C11.9537 18 11.9173 17.9868 11.8908 17.9603C11.8644"])
+drive.google.com##[data-list-type="MENU"] > [role="menuitem"]:has(path[d^="M12 18C11.9537 18 11.9173 17.9868 11.8908 17.9603C11.8644"]):remove()
+drive.google.com##[data-list-type="MENU"] > [role="menuitem"]:has(path[d^="M12 18C11.9537 18 11.9173 17.9868 11.8908 17.9603C11.8644"]) + [role="separator"]
+drive.google.com##[data-list-type="MENU"] > [role="menuitem"]:has(path[d^="M12 18C11.9537 18 11.9173 17.9868 11.8908 17.9603C11.8644"]) + [role="separator"]:remove()
+drive.google.com###nt\:Dr[role="treeitem"][aria-selected="false"]
 drive.google.com##.j6o35e:has([aria-label="You now have promotional access to audio overviews in Drive"])
 drive.google.com##.h-v[role="menuitem"]:has(.Nsw7Y)
 drive.google.com##.h-v[role="menuitem"]:has(.Nsw7Y) + .h-Yo[role="separator"]
