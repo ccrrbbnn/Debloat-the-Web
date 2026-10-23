@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-10-23 16:49:57 UTC
+! Last updated: 2026-10-23 21:14:52 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -614,11 +614,12 @@ glassdoor.com##[class^="AIRecruiterIntro_aiRecruiterIntroContainer__"]
 glassdoor.com##[class^="ModernSection_footerWrapper__"]
 glyphy.io##li:has(> [href$="/name-generator"])
 glyphy.io##section[class^="NameGenerators_container__"]
-mail.google.com##.lRwCV
-mail.google.com##.e5IPTd
 mail.google.com#%#//scriptlet('trusted-set-attr', '.searchboxInputFontClass[placeholder="Ask Gmail"]', 'placeholder', 'Search mail')
 mail.google.com#%#//scriptlet('trusted-set-attr', 'button[aria-label="Search mail"] > svg[viewBox="0 -960 960 960"]', 'viewBox', '0 0 24 24')
 mail.google.com#%#//scriptlet('trusted-set-attr', 'button[aria-label="Search mail"] path', 'd', 'M20.49,19l-5.73-5.73C15.53,12.2,16,10.91,16,9.5C16,5.91,13.09,3,9.5,3S3,5.91,3,9.5C3,13.09,5.91,16,9.5,16 c1.41,0,2.7-0.47,3.77-1.24L19,20.49L20.49,19z M5,9.5C5,7.01,7.01,5,9.5,5S14,7.01,14,9.5S11.99,14,9.5,14S5,11.99,5,9.5z')
+mail.google.com##.lRwCV
+mail.google.com##.e5IPTd
+mail.google.com##div[data-container-id$=":growth_promo_banner:growth_promo_banner"]:has(span[data-action-behavior*="\"GMAIL_ABOVE_INBOX_CARD\""][data-action-behavior*="\"https://one.google.com/ai"])
 mail.google.com##.bDl[command="sdt"]
 mail.google.com##.jKzJCd
 mail.google.com##.eLNZDd[command="sdt"]:remove()
@@ -2178,6 +2179,8 @@ github.com##.prc-ActionList-ActionListItem-So4vC:has(> [href="/settings/copilot"
 ||github.com/github-copilot/chat$xhr,1p
 ||github.com/static/images/modules/dashboard/promos/copilot-$image,1p
 github.com###automation > .lp-SectionTemplate > .lp-SectionBlock > .lp-SectionBlock-content > :is(.lp-SectionIntro, .lp-SectionHero)
+github.com##.topic article:has(.topic-tag:is([href="/topics/agentic-ai"], [href="/topics/ai-agent"], [href="/topics/ai-agents"], [href="/topics/ai-coding-assistant"], [href="/topics/chatgpt"], [href="/topics/claude-code"], [href="/topics/generative-ai"], [href="/topics/github-copilot"], [href="/topics/gpt-4"], [href="/topics/mcp"], [href="/topics/openclaw"], [href="/topics/stable-diffusion"])):not(:has(.topic-tag:is([href="/topics/anti-ai"], [href="/topics/ai-blocker"], [href="/topics/no-ai"]))):not(:has([datetime^="200"], [datetime^="201"], [datetime^="2020"], [datetime^="2021"]))
+github.com##.search-results-page div[class^="Result__"]:has(a[class^="topicLabel__"]:is([href="/topics/agentic-ai"], [href="/topics/ai-agent"], [href="/topics/ai-agents"], [href="/topics/ai-coding-assistant"], [href="/topics/chatgpt"], [href="/topics/claude-code"], [href="/topics/generative-ai"], [href="/topics/github-copilot"], [href="/topics/gpt-4"], [href="/topics/mcp"], [href="/topics/openclaw"], [href="/topics/stable-diffusion"])):not(:has(a[class^="topicLabel__"]:is([href="/topics/anti-ai"], [href="/topics/ai-blocker"], [href="/topics/no-ai"]))):not(:has([class^="footerItem__"]:last-child div:is([title*=", 200"], [title*=", 201"], [title*=", 2020,"], [title*=", 2021,"])))
 github.blog##li:has(> [href="https://github.blog/ai-and-ml/"])
 github.dev###chat\.statusBarEntry
 ||api.github.com/copilot_internal/$xhr,domain=github.dev
