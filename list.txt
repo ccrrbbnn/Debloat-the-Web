@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-10-23 04:16:08 UTC
+! Last updated: 2026-10-23 11:21:16 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
