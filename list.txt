@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-10-23 21:14:52 UTC
+! Last updated: 2026-10-24 04:07:16 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -31,7 +31,8 @@ lumo.proton.me##.lumo-upgrade-trigger.lumo-plus-upgrade-button.upsell-addon-butt
 ##.js--show.gen-ai
 ||widget.kapa.ai/kapa-widget.bundle.js$script,3p
 ||widget.molin.ai/shop-ai.js$script,domain=benu.hu|euronics.hu|www.decathlon.hu
-1password.com##.header-navigation__nav-banner-link[href="/product/unified-access"] > .box-decoration-clone
+1password.com##.header-navigation > div.bg-gold [href="/personal-ai-agent-integrations"] > span
+1password.com##.header-navigation > div.bg-gold:has([href="/personal-ai-agent-integrations"]):not(:has([href^="https://start.1password.com/signin"]))
 www.1password.dev#?#[role="menuitem"]:has-text(Copy page as Markdown for LLMs)
 www.1password.dev#?#[role="menuitem"]:has-text(Copy MCP Server URL to clipboard)
 www.1password.dev#?#[role="menuitem"]:has-text(Install MCP Server)
@@ -598,6 +599,7 @@ docs.github.com##[data-testid="ai-autocomplete-suggestions"]
 docs.github.com##[data-component="ActionList.Divider"]:has(+[data-testid="ai-autocomplete-suggestions"])
 docs.github.com##[data-testid="ask-ai"]
 www.githubstatus.com##.link-gray[href="https://github.com/features/copilot"]
+about.gitlab.com##.banner:is([data-ga-name="transcend-october-2026-banner"], [data-ga-name="orbit"])
 about.gitlab.com##[data-ga-name="ai-assisted development"], [data-ga-name="ai for coding"], [data-ga-name="agentic ai"]
 gitlab.com##.ai-navigation-rail
 gitlab.com##[data-testid="nav-item"]:has(> [data-track-label="orbit_menu"])
@@ -2190,7 +2192,6 @@ docs.github.com##.SearchOverlay_footer__45kw_
 docs.github.com##div[class^="ProductSelectionCard_cell__"]:has([role="listitem"]:first-child > [href="/en/copilot"])
 docs.github.com##[data-testid="carousel-items"] > [class^="Primer_Brand__Card-module__Card__outer___"]:has([href="/en/free-pro-team@latest/get-started/learning-to-code"])
 docs.github.com##div[class^="ViewMarkdownButton_belowIntroPlacement__"]
-about.gitlab.com##.banner:has(> [href="https://about.gitlab.com/blog/gitlab-duo-agent-platform-delivers-400-percent-roi/"])
 about.gitlab.com##.stacking-cards__card:has([data-ga-name="gitlab-duo"])
 gitlab.com##[data-track-label="model_registry"]
 gitlab.com##.reviewer-grid:has(> [data-username="GitLabDuo"])
