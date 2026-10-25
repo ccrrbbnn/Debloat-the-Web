@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-10-25 15:53:25 UTC
+! Last updated: 2026-10-25 20:39:54 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -1610,6 +1610,7 @@ web.whatsapp.com##.x1c4vz4f.xs83m0k.xdl72j9.x1g77sc7.x78zum5.xozqiw3.x1oa3qoh.x1
 web.whatsapp.com##.x1c4vz4f.xs83m0k.xdl72j9.x1g77sc7.x78zum5.xozqiw3.x1oa3qoh.x12fk4p8.xeuugli.x2lwn1j.x1nhvcw1.xdt5ytf.x1cy8zhl.x1277o0a > hr.xh8yej3.xjm9jq1.x178xt8z.x13fuv20.xx42vgk.x18oe1m7.x1sy0etr.xstzfhl
 ||whizz-tech.com/wp-content/plugins/whizz-chat/assets/chat.js$script,1p
 www.windowslatest.com##.icon-chat
+||garry3-be-prd.windscribe.com/garry.js$script,1p
 www.wolframalpha.com##.sc-f328ba4c-0:has(> [href="https://www.wolfram.com/resources/tools-for-AIs/"])
 www.wolframalpha.com##.sc-f328ba4c-0:has(+ .sc-f328ba4c-0 > [href="https://www.wolfram.com/resources/tools-for-AIs/"])::after
 www.wolframalpha.com##.sc-fc1b1463-0:has(> [href^="https://www.amazon.com/What-ChatGPT-Doing-Does-Work/dp/1579550819"])
