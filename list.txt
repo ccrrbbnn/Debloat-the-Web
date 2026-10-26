@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-10-26 12:38:19 UTC
+! Last updated: 2026-10-26 22:31:24 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -1682,10 +1682,12 @@ search.yahoo.com##.scoutNav
 search.yahoo.com##.scout-tab
 search.yahoo.com##.searchLeftTop li:has(> [href^="https://shopping.yahoo.com/search"])
 search.yahoo.com##.searchRightBottom:has(.AlsoTry_E):has([href^="https://scout.yahoo.com/chat"])
-finance.yahoo.com##.dig-deeper-wrapper
-finance.yahoo.com##[data-testid="lazym-digDeeper"] + .skeleton-container
 search.yahoo.com##.summary-container:has(> .ai-summary)
 shopping.yahoo.com##form[role="search"]
+finance.yahoo.com##.dock-tablist-capsule:has(#tab-dock-modules[aria-selected="true"])
+finance.yahoo.com##.scout-fab-split-half--scout
+finance.yahoo.com##.dig-deeper-wrapper
+finance.yahoo.com##[data-testid="lazym-digDeeper"] + .skeleton-container
 www.yahoo.co.jp##.yMWCYupQNdgppL-NV6sMi._3sAlKGsIBCxTUbNi86oSjt[href^="https://search.yahoo.co.jp/aichat?"]
 www.yahoo.co.jp###agenti
 www.yahoo.co.jp##li:has(> [href^="https://search.yahoo.co.jp/aichat?"])
@@ -2366,6 +2368,7 @@ code.visualstudio.com##.docs-latest-item[href^="/docs/agents/"]
 code.visualstudio.com###main-nav [href="#agentic-articles"]
 code.visualstudio.com##.docs-markdown-actions
 tech.yahoo.com##.group\/mega-nav-item:has([aria-controls="submenu-ai"])
+finance.yahoo.com##.featured-nav > li:has(> [href="https://finance.yahoo.com/technology/ai/"])
 www.youtube.com##yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"]:has(.ytChipShapeHost:has-text(/^AI$/))
 www.youtube.com##ytd-rich-section-renderer:has([is-mini-game-card-shelf])
 m.youtube.com##ytm-rich-section-renderer:has(mini-game-card-view-model)
