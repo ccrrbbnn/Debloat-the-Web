@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-10-28 22:25:27 UTC
+! Last updated: 2026-10-29 05:17:20 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -2380,6 +2380,8 @@ code.visualstudio.com##[role="listitem"]:has(> .feature-card[href^="/docs/agent-
 code.visualstudio.com##.docs-latest-item[href^="/docs/agents/"]
 code.visualstudio.com###main-nav [href="#agentic-articles"]
 code.visualstudio.com##.docs-markdown-actions
+wordcounter.net##.grammarly_warning
+wordcounter.net###spell-btn:has(#grammarlyON[style*="display:none"])
 tech.yahoo.com##.group\/mega-nav-item:has([aria-controls="submenu-ai"])
 finance.yahoo.com##.featured-nav > li:has(> [href="https://finance.yahoo.com/technology/ai/"])
 www.youtube.com##yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"]:has(.ytChipShapeHost:has-text(/^AI$/))
