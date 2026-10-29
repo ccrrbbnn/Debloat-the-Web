@@ -1,5 +1,5 @@
 ! Title: Debloat the Web
-! Last updated: 2026-10-29 12:42:00 UTC
+! Last updated: 2026-10-29 22:38:20 UTC
 ! Homepage: https://github.com/ccrrbbnn/Debloat-the-Web
 
 m.facebook.com##.bottom.fixed-container.m
@@ -478,6 +478,8 @@ firstpost.com###ia-search
 www.foodnetwork.com##.reviewsSummary
 www.forbes.com##.jwGQ_
 www.forbes.com##.genAiSummary
+www.freeconvert.com##[data-automation-id="CrossPromoAiPhotoEditorGroup"]
+www.freeconvert.com##.ai-section
 fritz.com###chat-widget-root
 ful.io##nav li:has(> [href="https://chrome.google.com/webstore/detail/email-finder-powered-by-a/lhcmmncnljldcdeeheclgfidlgllgfhc"])
 ful.io##nav > .items-center:has(> [href="https://chrome.google.com/webstore/detail/fulio-free-real-time-sale/adfkbphmnebbfljcdcfjlckobbacdgfn"])
@@ -1320,6 +1322,8 @@ www.reddit.com#%#//scriptlet('remove-attr', 'expanded-composer-enabled', 'reddit
 www.reddit.com#%#//scriptlet('remove-attr', 'expanded-composer-enabled', 'reddit-search-small[expanded-composer-enabled]')
 www.reddit.com##.expanded-composer-ask-pill
 www.reddit.com##[data-testid="search-sdui-typeahead-suggestion"] .inline-block.text-neutral-content-weak
+www.reddit.com##.trailing-divider:has(+ .trailing-content-container > [name="trailingContent"])
+www.reddit.com##.trailing-content-container:has(> [name="trailingContent"])
 www.reddit.com#?#shreddit-post[recommendation-source]:matches-attr(subreddit-name="/^(3amAI|ADULT_ART_AI|AgentsOfAI|AI_Agents|Ai_and_Digital_arts|AI_ART|AI_Art_Department|AI_Art_Requests|AI_Art_Series|ai_artworld|AI_developers|Ai_Dragons|Ai_HarryPotter|Ai_Husbando_Art|Ai_PeopleOfColor_Art|Ai_Pokemon|Ai_StarWars_Art|AIAliveSentient|aiArt|AiArt_Psych|AIartbattle|AiArtChallenge|aiartcodex|AIArtCreator|aiARTistsUNITE|AIArtistWorkflows|AiArtLounge|AIArtPorn|AiArtShow|AIArtwork|AiArtWow|AIArtZone|aibeingstupid|AiCarArt|AICatgirls|AICharacterDrawing|AiChatGPT|aiCoffeeArt|AiComicBookArt|AiComicBookArt|AIEscher|aifails|AIfreakout|aigamedev|AIGameOfThrones|aiGayArt|AIGenArt|AiGenCarporn|AIGeneratedArt|aigeneratedmemes|AIgeneratednightmares|AIGeneratedPokemon|AIGirlfriend|AiGirlsSexyArt|aigoddesses|AIGrinding|AiHentaiArtwork|Aihotgirl|aiHub|AIisfuckinglit|ailookbook|AImsorryjon|aiMusic|AIpornhub|aipromptprogramming|AIRetrofuturism|aisettings|aispacegirls|aitoolsupdate|AiUncensored|aivideo|AIVideo4all|AiVideoGameArt|AIVisibile|aiwars|AiWholesome|aiyiff|AmazingAI|AnimeAIArt|anyaiart|Art_of_AI|Arthemy|artificial|ArtificialInteligence|ArtIsForEveryone|bard|bigsleep|Celebrity_Ai_Photos|CharacterAI|CharacterAI_No_Filter|Chatbots|ChatGPT|ChatGPTCoding|ChatGPTPro|civitai|claude|ClaudeAI|comfyui|Copilot|craiyon|CursedAI|cursedAIpics|dalle2|dallemini|dawnAi|deepdream|DeepFloydIF|deeplearning|DefendingAI|DefendingAIArt|DimensionTraveler|DiscoDiffusion|dndai|DragonDiffusion|DreamArchitecture|DreamBooth|dreamcasting|DreamstudioAI|DumbAI|DuneAI|DungeonoftheMadMage|EternalAI_org|FanArtAI|FiddlartAi|FurAI|GarfieldAI_art|GeminiAI|GenAI4all|generateforme|generative|generativeAI|GenTube|GithubCopilot|GoogleAI|GoogleAIGoneWild|GoogleGeminiAI|GPT3|hellaflyai|HighEndAI|HQ_AI_Ecchi|ImageGenerators|Indian_AI_Girls|IndianArtAI|indie_games_and_ai|invokeai|JustOneWord|layla_ai|Lensa|LensaFails|leonardoai|lotr_ai_art|lotr_ai_art|LOTRAI|LovingOpenSourceAI|MachineLearning|MBVirtualVixens|MediaSynthesis|microsoft_365_copilot|midjourney|MidJourney2Dalle|midjourney_imagine|MidjourneyArtworks|MidJourneyDiscussions|MidjourneyFails|MidJourneyFantasy|MidjourneyPrompts|momaia|narrative_ai_art|nightcafe|nijijourney|nonutsnightmare|NovelAi|OpenAI|perplexity_ai|Pixai_Official|ProductHunters|PromptArt|promptcraft|PromptDesign|PromptEngineering|PromptSharing|promptsideas|RenaissanceArt_AI|riffusion|sdforall|sdnsfw|SeaArtAI|sexbotlovers|shittyAiArt|SillyTavernAI|singularity|SoraAi|StableDiffusion|StableDiffusionInfo|StableDiffusionUI|starryai|StarWarsAIArt|stupidAI|SukiAI|SunoAI|te_diffusion|TheAIBrain|WaifuDiffusion|weirddalle|WomboArt|Wombodream|wonderAI|WorldbuildingWithAI)$/")
 www.reddit.com###search-results-page-tab-ai_search
 www.reddit.com##search-telemetry-tracker[view-events="search/view/unit"]:has(search-answers-expandable, search-answers-response-container-streaming, .search-answers-preview-section)
@@ -1559,6 +1563,14 @@ androidpolice.com,backyardboss.net,carbuzz.com,cbr.com,collider.com,dualshockers
 androidpolice.com,backyardboss.net,carbuzz.com,cbr.com,collider.com,dualshockers.com,fextralife.com,footballfancast.com,footballleagueworld.co.uk,gamerant.com,givemesport.com,hardcoregamer.com,hotcars.com,howtogeek.com,makeuseof.com,movieweb.com,pocket-lint.com,screenrant.com,simpleflying.com,thegamer.com,therichest.com,thesportster.com,thethings.com,thetravel.com,topspeed.com,xda-developers.com##.action-bar-ai-feature
 app.vanta.com##[data-testid="global-vanta-ai-button"]
 app.vanta.com###vanta-agent
+www.veed.io##.relative.z-50.flex.h-12.w-full.items-center.justify-center.bg-\[\#121212\].px-10:has(> [href="https://www.veed.io/workspaces"])
+www.veed.io##[data-testid="@upload-modal/ai_character_video_card"]
+www.veed.io##[data-testid="@editor/ai-tools"]
+www.veed.io##[data-testid="@editor/media/gen-ai-video"]
+www.veed.io##[data-radix-scroll-area-viewport] div.flex.flex-col.gap-12.pt-6 > div.flex.flex-col.gap-4:has([data-testid^="@ai-avatars/fabric-character-item-"])
+www.veed.io##[data-testid="@editor/media/text-to-speech"]
+www.veed.io##[data-testid="@editor/media/voice-clone"]
+www.veed.io##[data-testid^="@editor/image/gen-ai/generate-"]
 ||widget.wenetasystent.ai/page/$subdocument,domain=www.veldach.com.pl
 www.veldach.com.pl##.assistant-widget-container
 www.veldach.com.pl##.assistant-widget-drawer-content
@@ -2100,19 +2112,30 @@ zhentube.com###menu-item-33914
 zhentube.com##a[href="https://zhentube.com/aisexslut"]
 |https://chatgpt.com^$document
 |https://github.com/copilot^$document
+||ask.brave.com^$document
 ||assistant.kagi.com^$document
+||chat.z.ai^$document
 ||claude.ai^$document
 ||dictionary.cambridge.org/assistant^$document
+||duck.ai^$document
 ||euria.infomaniak.com^$document
 ||copilot.microsoft.com^$document
+||gemma4-ai.com^$document
+||gemma4.chat/chat^$document
+||gemma4.com/chat^$document
 ||grok.com^$document
 ||gemini.google.com/app^$document
 ||glyphy.io/name-generator^$document
 ||imgflip.com/ai-meme^$document
 ||kagi.com/summarizer^$document
+||lumo.proton.me^$document
 ||nicevoice.org/ai-voice-generator^$document
+||notrack.ai/chat^$document
 ||m365.cloud.microsoft/chat^$document
 ||perchance.org/ai-chat^$document
+||poe.com^$document
+||qwen.ai^$document
+||search.brave.com/ask^$document
 ||stackoverflow.com/ai-assist^$document
 ||www.bing.com/images/create/ai-image-generator^$document
 ||www.britannica.com/chatbot^$document
@@ -2211,9 +2234,10 @@ cortex-docs.paloaltonetworks.com##body:has(.page-no-toc) header:has(> .layout-wi
 github.com##.prc-ActionList-ActionListItem-So4vC:has(> [href="/settings/copilot"])
 ||github.com/github-copilot/chat$xhr,1p
 ||github.com/static/images/modules/dashboard/promos/copilot-$image,1p
-github.com###automation > .lp-SectionTemplate > .lp-SectionBlock > .lp-SectionBlock-content > :is(.lp-SectionIntro, .lp-SectionHero)
+github.com##[partial-name="dashboard-lists"] [class^="List__"]:has(.octicon-agent)
 github.com##.topic article:has(.topic-tag:is([href="/topics/agentic-ai"], [href="/topics/ai-agent"], [href="/topics/ai-agents"], [href="/topics/ai-coding-assistant"], [href="/topics/chatgpt"], [href="/topics/claude-code"], [href="/topics/generative-ai"], [href="/topics/github-copilot"], [href="/topics/gpt-4"], [href="/topics/mcp"], [href="/topics/openclaw"], [href="/topics/stable-diffusion"])):not(:has(.topic-tag:is([href="/topics/anti-ai"], [href="/topics/ai-blocker"], [href="/topics/no-ai"]))):not(:has([datetime^="200"], [datetime^="201"], [datetime^="2020"], [datetime^="2021"]))
 github.com##.search-results-page div[class^="Result__"]:has(a[class^="topicLabel__"]:is([href="/topics/agentic-ai"], [href="/topics/ai-agent"], [href="/topics/ai-agents"], [href="/topics/ai-coding-assistant"], [href="/topics/chatgpt"], [href="/topics/claude-code"], [href="/topics/generative-ai"], [href="/topics/github-copilot"], [href="/topics/gpt-4"], [href="/topics/mcp"], [href="/topics/openclaw"], [href="/topics/stable-diffusion"])):not(:has(a[class^="topicLabel__"]:is([href="/topics/anti-ai"], [href="/topics/ai-blocker"], [href="/topics/no-ai"]))):not(:has([class^="footerItem__"]:last-child div:is([title*=", 200"], [title*=", 201"], [title*=", 2020,"], [title*=", 2021,"])))
+github.com###automation > .lp-SectionTemplate > .lp-SectionBlock > .lp-SectionBlock-content > :is(.lp-SectionIntro, .lp-SectionHero)
 github.blog##li:has(> [href="https://github.blog/ai-and-ml/"])
 github.dev###chat\.statusBarEntry
 ||api.github.com/copilot_internal/$xhr,domain=github.dev
